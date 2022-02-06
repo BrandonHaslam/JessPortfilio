@@ -1,8 +1,8 @@
 <template>
   <!-- <Tutorial /> -->
 
-  <h1 class="text-blue-500">
-    hello
+  <h1 class="text-pink-500">
+    I am Jessica's Portfolio
   </h1>
 </template>
 
