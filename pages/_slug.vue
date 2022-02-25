@@ -48,8 +48,8 @@ export default {
 
     // Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi
-      .get(`cdn/stories/${fullSlug}/`, {
-        resolve_relations: "Page.Header",
+      .get(`cdn/stories/${fullSlug}`, {
+        version: "draft",
       })
       .then((res) => {
         return res.data;
