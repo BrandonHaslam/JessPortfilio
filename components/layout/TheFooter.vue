@@ -1,12 +1,12 @@
 <template>
     <footer>
         <section>
-        <!-- left -->
+            <!-- left -->
             Footer
         </section>
         <section>
-        <!-- right -->
+            <!-- right -->
             Footer
         </section>
     </footer>
-</template>
+</template>https://stackoverflow.com/questions/47219272/how-can-i-use-window-size-in-vue-how-do-i-detect-the-soft-keyboard
