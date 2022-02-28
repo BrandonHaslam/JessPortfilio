@@ -25,7 +25,7 @@ module.exports = {
     },
     extend: {
       padding: {
-        'layout': '0 7.5vw',
+        'layout': '0 5vw',
       }
     }
   },

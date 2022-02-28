@@ -18,20 +18,25 @@ export default {
             required: true,
         },
     },
+    computed: {
+        storyBlokBackgroundColour() {
+            return this.blok.BackgroundColour.color ?? "white";
+        },
+        storyBlokTextColour() {
+            return this.blok.TextColour.color ?? "black";
+        },
+    },
+    watch: {
+        // This will not work locally due to the data being static
+        blok() {
+            this.setColours();
+        },
+    },
     methods: {
         setColours() {
             let body = document.querySelector("body");
-            let storyBlokBackgroundColour = this.blok.BackgroundColour.color;
-            let storyBlokTextColour = this.blok.TextColour.color;
-
-            storyBlokBackgroundColour
-                ? (body.style.background = storyBlokBackgroundColour)
-                : (body.style.background = "white");
-            console.log(storyBlokBackgroundColour);
-            storyBlokTextColour
-                ? (body.style.color = storyBlokTextColour)
-                : (body.style.background = "black");
-            console.log(storyBlokTextColour);
+            body.style.background = this.storyBlokBackgroundColour;
+            body.style.color = this.storyBlokTextColour;
         },
     },
     mounted() {
