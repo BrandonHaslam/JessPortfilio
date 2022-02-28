@@ -24,7 +24,7 @@
             @openNavigation="mobileNavOpen = !mobileNavOpen"
         /> -->
         <Logo class="fixed left-[5vw] top-[5vw] sm:static" />
-        <!-- <LinkList class="sm:ml-auto text-center" /> -->
+        <LinkList class="sm:ml-auto text-center" />
         <ContactInfo />
     </header>
 </template>
