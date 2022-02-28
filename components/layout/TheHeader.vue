@@ -10,10 +10,10 @@
             absolute
             transition-all
             duration-1000
-            sm:static sm:flex-row sm:items-center sm:h-auto sm:
+            sm:static sm:flex-row sm:items-center sm:h-auto
             p-layout
         "
-        :class="[!this.mobileNavOpen ? '-left-full' : 'left-0']"
+        :class="!this.mobileNavOpen ? '-left-full' : 'left-0'"
     >
         <HamburgerButton
             class="fixed top-[5vw] right-[5vw] sm:hidden"
@@ -24,7 +24,7 @@
             @openNavigation="mobileNavOpen = !mobileNavOpen"
         /> -->
         <Logo class="fixed left-[5vw] top-[5vw] sm:static" />
-        <LinkList class="sm:ml-auto text-center" />
+        <!-- <LinkList class="sm:ml-auto text-center" /> -->
         <ContactInfo />
     </header>
 </template>
@@ -34,7 +34,7 @@ export default {
         HamburgerButton: () =>
             import("@@/components/layout/Header/HamburgerButton.vue"),
         Logo: () => import("./Logo.vue"),
-        LinkList: () => import("@@/components/layout/Header/LinkList.vue"),
+        // LinkList: () => import("@@/components/layout/Header/LinkList.vue"),
         ContactInfo: () => import("./Header/ContactInfo.vue"),
     },
     data: () => ({
@@ -56,7 +56,7 @@ export default {
 };
 // will be hamburger for mobiles
 // Pass click event to list
-// Add animation to list 
+// Add animation to list
 // Change Import this import name via https://nuxtjs.org/docs/directory-structure/components/#nested-directories and place in header file
 </script>
 <style lang="postcss" scoped>
