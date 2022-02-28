@@ -54,6 +54,10 @@ export default {
         },
     },
 };
+// will be hamburger for mobiles
+// Pass click event to list
+// Add animation to list 
+// Change Import this import name via https://nuxtjs.org/docs/directory-structure/components/#nested-directories and place in header file
 </script>
 <style lang="postcss" scoped>
 header {
@@ -62,7 +66,3 @@ header {
     font-weight: 600;
 }
 </style>
-// will be hamburger for mobiles
-// Pass click event to list
-// Add animation to list 
-// Change Import this import name via https://nuxtjs.org/docs/directory-structure/components/#nested-directories and place in header file

@@ -65,5 +65,5 @@ a {
 span.headerSegregate {
     font-size: 24px;
 }
-</style>
 // accessibility
+</style>
