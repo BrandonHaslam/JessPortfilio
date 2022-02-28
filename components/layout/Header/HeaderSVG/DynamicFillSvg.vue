@@ -20,5 +20,5 @@ export default {
         },
     },
 };
-</script>
 // This could include a prop for svg code?
+</script>

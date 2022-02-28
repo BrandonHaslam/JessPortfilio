@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <LayoutTheHeader />
-        <Nuxt />
-        <LayoutTheFooter />
-    </div>
+  <div>
+    <LayoutTheHeader />
+    <Nuxt />
+    <LayoutTheFooter />
+  </div>
 </template>
 <style lang="postcss">
 #__layout {
