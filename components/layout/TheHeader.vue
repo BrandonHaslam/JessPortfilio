@@ -32,9 +32,9 @@
 export default {
     components: {
         HamburgerButton: () =>
-            import("@/components/layout/Header/HamburgerButton.vue"),
+            import("@@/components/layout/Header/HamburgerButton.vue"),
         Logo: () => import("./Logo.vue"),
-        LinkList: () => import("@/components/layout/Header/LinkList.vue"),
+        LinkList: () => import("@@/components/layout/Header/LinkList.vue"),
         ContactInfo: () => import("./Header/ContactInfo.vue"),
     },
     data: () => ({
