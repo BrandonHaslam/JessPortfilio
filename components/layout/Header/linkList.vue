@@ -30,11 +30,12 @@
 </template>
 <script>
 export default {
-  name: 'HeaderLinkList',
+    name: 'HeaderLinkList',
   components: {
-    DynamicFillSvg: () => import('./HeaderSVG/DynamicFillSvg.vue')
+      DynamicFillSvg: () => import('./HeaderSVG/DynamicFillSvg.vue')
   }
 }
+      // accessibility
 </script>
 <style lang="postcss" scoped>
 a {
@@ -65,5 +66,4 @@ a {
 span.headerSegregate {
     font-size: 24px;
 }
-// accessibility
 </style>
