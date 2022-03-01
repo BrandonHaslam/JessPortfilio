@@ -1,41 +1,39 @@
 <template>
-  <nav>
-    <ul class="flex flex-col sm:ml-auto sm:flex-row sm:items-center">
-      <!-- Internal -->
-      <NuxtLink
-        to="/portfolio"
-        class="navLink__animation"
-      >
-        Portfolio
-      </NuxtLink>
-      <NuxtLink to="/about" class="navLink__animation">
-        About
-      </NuxtLink>
+    <nav>
+        <ul class="flex flex-col sm:ml-auto sm:flex-row sm:items-center">
+            <!-- Internal -->
+            <NuxtLink to="/portfolio" class="navLink__animation">
+                Portfolio
+            </NuxtLink>
+            <NuxtLink to="/about" class="navLink__animation"> About </NuxtLink>
 
-      <span class="headerSegregate px-8">|</span>
+            <span class="headerSegregate px-8">|</span>
 
-      <!-- External -->
-      <NuxtLink
-        class="headerSegregate navLink__animation"
-        to="/contact"
-      >
-        Contact
-      </NuxtLink>
-      <a href="https://www.linkedin.com/">
-        <!-- <img class="h-16" src="~/assets/images/linkedin.svg" /> -->
-        <DynamicFillSvg class="h-16" fill-colour="#c275ff" />
-      </a>
-    </ul>
-  </nav>
+            <!-- External -->
+            <NuxtLink class="headerSegregate navLink__animation" to="/contact">
+                Contact
+            </NuxtLink>
+            <a href="https://www.linkedin.com/" class="h-16 text-purple-400">
+                <!-- <img
+                    type="svg"
+                    class="h-16 text-purple-400"
+                    src="~/assets/images/linkedin.svg"
+                /> -->
+                <LinkedInSvg />
+                <!-- <DynamicFillSvg class="h-16 text-green-400" /> -->
+            </a>
+        </ul>
+    </nav>
 </template>
 <script>
 export default {
-    name: 'HeaderLinkList',
-  components: {
-      DynamicFillSvg: () => import('./HeaderSVG/DynamicFillSvg.vue')
-  }
-}
-      // accessibility
+    name: "HeaderLinkList",
+    components: {
+        DynamicFillSvg: () => import("./HeaderSVG/DynamicFillSvg.vue"),
+        LinkedInSvg: () => import("@/assets/images/linkedin.svg"),
+    },
+};
+// accessibility
 </script>
 <style lang="postcss" scoped>
 a {
