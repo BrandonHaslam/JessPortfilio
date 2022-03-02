@@ -12,6 +12,7 @@
             class="bottom hamburger w-[3rem]"
             :class="{ 'bottom-animate': navigationOpenAnimation }"
         />
+        this is a test
     </button>
 </template>
 <script>
