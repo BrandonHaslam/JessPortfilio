@@ -17,14 +17,14 @@
     >
         <HamburgerButton
             class="fixed top-[5vw] right-[5vw] sm:hidden"
-            @openNavigation="NavbarToggle"
+            @toggleNavigation="NavbarToggle"
         />
         <!-- <HamburgerButton
             class="fixed top-4 right-4 sm:hidden"
             @openNavigation="mobileNavOpen = !mobileNavOpen"
         /> -->
         <Logo class="fixed left-[5vw] top-[5vw] sm:static" />
-        <LinkList class="sm:ml-auto text-center" />
+        <LinkList class="sm:block sm:ml-auto text-center" />
         <ContactInfo />
     </header>
 </template>
@@ -61,7 +61,7 @@ export default {
 </script>
 <style lang="postcss" scoped>
 header {
-    @apply text-[5rem] sm:text-[1.75rem] md:text-[2rem];
+    @apply text-[3rem] sm:text-[1.75rem] md:text-[2rem];
     /* font-size: 2rem; */
     font-weight: 600;
 }

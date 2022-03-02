@@ -48,6 +48,7 @@ export default {
         return context.app.$storyapi
             .get(`cdn/stories/${fullSlug}/`, {
                 resolve_relations: "Page.Header",
+                version: "draft",
             })
             .then((res) => {
                 return res.data;

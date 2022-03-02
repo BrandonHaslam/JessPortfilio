@@ -2,25 +2,20 @@
     <nav>
         <ul class="flex flex-col sm:ml-auto sm:flex-row sm:items-center">
             <!-- Internal -->
-            <NuxtLink to="/portfolio" class="navLink__animation">
-                Portfolio
-            </NuxtLink>
-            <NuxtLink to="/about" class="navLink__animation"> About </NuxtLink>
-
+            <NuxtLink to="/portfolio" class="navLink__animation"
+                >Portfolio</NuxtLink
+            >
+            <NuxtLink to="/about" class="navLink__animation">About</NuxtLink>
             <span class="headerSegregate px-8">|</span>
-
             <!-- External -->
-            <NuxtLink class="headerSegregate navLink__animation" to="/contact">
-                Contact
-            </NuxtLink>
-            <a href="https://www.linkedin.com/" class="h-16 text-purple-400">
-                <!-- <img
-                    type="svg"
-                    class="h-16 text-purple-400"
-                    src="~/assets/images/linkedin.svg"
-                /> -->
+            <NuxtLink class="headerSegregate navLink__animation" to="/contact"
+                >Contact</NuxtLink
+            >
+            <a
+                href="https://www.linkedin.com/"
+                class="sm:flex sm:items-center h-16 text-[#C275FF] hidden"
+            >
                 <LinkedInSvg />
-                <!-- <DynamicFillSvg class="h-16 text-green-400" /> -->
             </a>
         </ul>
     </nav>
@@ -45,6 +40,7 @@ a {
     top: 50%;
     left: -5px;
     opacity: 0;
+    color: white;
     content: "●";
     transition: all 300ms;
 }
@@ -54,10 +50,6 @@ a {
     left: -5px;
     transition: all 500ms;
 }
-/* .linkedinLogo {
-    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
-        brightness(119%) contrast(119%);
-} */
 .headerSegregate {
     color: #c275ff;
 }
