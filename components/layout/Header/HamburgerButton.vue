@@ -33,15 +33,15 @@ export default {
 
 <style lang="postcss" scoped>
 .hamburger {
-    @apply bg-[#C275FF] h-2 my-6 rounded transition-all duration-500;
+    @apply bg-[#C275FF] h-1 xs:h-2 my-6 rounded transition-all duration-500;
 }
 .top-animate {
-    transform: translate(0.5rem, 1rem) rotate(45deg);
+    @apply translate-x-[0.5rem] translate-y-[0.7rem] xs:translate-x-[0.55rem] xs:translate-y-[1.05rem] rotate-45;
 }
 .middle-animate {
-    transform: rotate(-45deg);
+    @apply -rotate-45;
 }
 .bottom-animate {
-    transform: translate(1.25rem, -1.5rem) rotate(45deg);
+    @apply translate-x-[1.25rem] translate-y-[-1.25rem] xs:translate-y-[-1.5rem]  rotate-45;
 }
 </style>

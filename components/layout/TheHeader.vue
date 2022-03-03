@@ -1,15 +1,20 @@
 <template>
     <header
         class="
-            py-8
-            px-[7.5vw]
+            text-white
+            sm:text-inherit
+            !py-8
             align-center
             justify-center
             flex
-            sm:static sm:flex-row sm:items-center sm:h-auto sm:p-layout
+            sm:static sm:flex-row sm:items-center sm:h-auto
+            p-layout
+            overflow-hidden
         "
     >
-        <Logo class="mr-auto sm:static z-50" />
+        <NuxtLink to="/" aria-label="Link to Homepage" class="mr-auto z-50">
+            <Logo class="sm:static h-32 w-32 sm:h-36 sm:w-36 md:h-40 md:w-40" />
+        </NuxtLink>
         <HamburgerButton
             class="sm:hidden z-50"
             @toggleNavigation="NavbarToggle"
@@ -21,6 +26,7 @@
                 transition-all
                 duration-1000
                 bg-[#050020]
+                sm:bg-inherit
                 h-screen
                 w-screen
                 flex flex-col
@@ -28,7 +34,7 @@
                 justify-center
                 sm:static sm:flex-row sm:h-auto sm:w-auto
                 z-10
-                px-[7.5vw]
+                px-[10vw]
                 sm:p-0
             "
             :class="!this.mobileNavOpen ? '-left-full' : 'left-0'"
@@ -39,15 +45,15 @@
                     text-center
                     invisible
                     sm:visible
-                    transition-all
-                    duration-500
+                    transition-visibility
+                    duration-1000
                     mt-auto
                     sm:pt-0
                 "
                 :class="{ '!visible': mobileNavOpen }"
             />
             <ContactInfo
-                class="invisible transition-all duration-500 my-12"
+                class="invisible transition-visibility duration-1000 my-12"
                 :class="{ '!visible': mobileNavOpen }"
             />
         </section>
@@ -58,7 +64,7 @@ export default {
     components: {
         HamburgerButton: () =>
             import("@/components/layout/Header/HamburgerButton.vue"),
-        Logo: () => import("./Logo.vue"),
+        Logo: () => import("@/assets/images/CircleLogo.svg"),
         LinkList: () => import("@/components/layout/Header/LinkList.vue"),
         ContactInfo: () => import("./Header/ContactInfo.vue"),
     },

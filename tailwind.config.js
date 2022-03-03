@@ -8,6 +8,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'xs': '350px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -24,9 +25,17 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      screens: {
+        'xs': '350px',
+        // => @media (min-width: 350px) { ... }
+      },
       padding: {
         'layout': '0 5vw',
       },
+      transitionProperty: {
+        'visibility': 'visibility',
+        'translate': 'translate',
+      }
 
     }
   },

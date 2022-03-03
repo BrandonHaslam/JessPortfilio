@@ -4,7 +4,7 @@
             class="
                 flex flex-col
                 sm:ml-auto sm:flex-row sm:items-center
-                text-[4rem]
+                text-[3.75rem]
                 sm:text-[1.75rem]
                 md:text-[2rem]
                 font-semibold
