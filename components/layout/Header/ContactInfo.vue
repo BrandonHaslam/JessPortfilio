@@ -41,8 +41,6 @@ export default {
         LinkedInSvg: () => import("@/assets/images/linkedin.svg"),
     },
 };
-// Mobile contact info
-// Will have media query on component rather than here, will hide on sm
 </script>
 <style scoped>
 a {

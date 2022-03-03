@@ -43,7 +43,6 @@
                     duration-500
                     mt-auto
                     sm:pt-0
-                    overflow-y-scroll
                 "
                 :class="{ '!visible': mobileNavOpen }"
             />
