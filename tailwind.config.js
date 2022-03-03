@@ -26,7 +26,8 @@ module.exports = {
     extend: {
       padding: {
         'layout': '0 5vw',
-      }
+      },
+
     }
   },
   plugins: []
