@@ -1,4 +1,4 @@
-# JessicaPortfolio
+# jess-portfolio-markdown
 
 ## Build Setup
 
