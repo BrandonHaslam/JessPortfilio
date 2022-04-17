@@ -68,6 +68,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxt/content',
     [
       '@storyblok/nuxt',
       {
@@ -76,6 +77,10 @@ export default {
       }
     ]
   ],
+  content: {
+    // Options
+    useCache: true
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

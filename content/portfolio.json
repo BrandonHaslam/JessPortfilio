@@ -1,0 +1,27 @@
+{
+  "title": "This is the portfolio page",
+  "projects": [
+    {
+      "name": "test project 1",
+      "link": "test1",
+      "imageHref": "test project 1",
+      "category": "web design"
+    },
+    {
+      "name": "test project 2",
+      "link": "test2",
+      "imageHref": "test project 2"
+    },
+    {
+      "name": "test project 3",
+      "link": "test3",
+      "imageHref": "test project 3"
+    },
+    {
+      "name": "test project 4",
+      "link": "test4",
+      "imageHref": "test project 4"
+    },
+    {}
+  ]
+}

@@ -10,5 +10,7 @@
   }
   body {
     height: 100%;
+    color: white;
+    background: #050020;
   }
 }
