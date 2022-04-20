@@ -10,18 +10,43 @@
     {
       "name": "test project 2",
       "link": "test2",
-      "imageHref": "test project 2"
+      "imageHref": "test project 2",
+      "category": "product design"
     },
     {
       "name": "test project 3",
       "link": "test3",
-      "imageHref": "test project 3"
+      "imageHref": "test project 3",
+      "category": "product design"
     },
     {
       "name": "test project 4",
       "link": "test4",
-      "imageHref": "test project 4"
+      "imageHref": "test project 4",
+      "category": "product design"
     },
-    {}
+    {
+      "name": "test project 5",
+      "link": "test5",
+      "imageHref": "test project 5",
+      "category": "Jessica"
+    },
+    {
+      "name": "test project 6",
+      "link": "test6",
+      "imageHref": "test project 6",
+      "category": "web design"
+    },
+    {
+      "name": "test project 7",
+      "link": "test7",
+      "imageHref": "test project 7",
+      "category": "web design"
+    },
+    {
+      "name": "test project 8",
+      "link": "test8",
+      "imageHref": "test project 8"
+    }
   ]
 }

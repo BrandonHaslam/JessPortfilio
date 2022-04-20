@@ -1,41 +1,28 @@
 <template>
-    <main class="absolute top-0 w-full">
+    <main class="w-full">
         <section
             class="section-colour flex justify-center items-center text-center"
         >
             <div>
                 <h1 class="text-[3rem] sm:text-[5rem]">{{ page.title }}</h1>
-                <button
-                    v-for="category in categories"
-                    :key="`${category} button`"
-                    :aria-label="`${category} button`"
-                    class="
-                        border border-[#C275FF]
-                        p-4
-                        rounded-2xl
-                        text-[#C275FF]
-                        hover:bg-[#C275FF] hover:text-white
-                        font-medium
-                        sm:text-[1.75rem]
-                    "
-                >
-                    {{ category }}
-                </button>
+                <PortfolioProjectButtonList
+                    @setCurrentCategory="setCurrentCategory($event)"
+                    :categories="categories"
+                />
             </div>
         </section>
-        <ul>
-            <li v-for="project in projects" :key="project.name">
-                <!-- <ProductCard :project="project" /> -->
-                <a :href="`portfolio/${project.link}`">
-                    {{ project.name }}
-                </a>
-            </li>
-        </ul>
+        <PortfolioProjectList :projects="currentProjects" />
     </main>
 </template>
  
 <script>
 export default {
+    components: {
+        PortfolioProjectList: () =>
+            import("~/components/Portfolio/ProjectList.vue"),
+        PortfolioProjectButtonList: () =>
+            import("~/components/Portfolio/ProjectButtonList.vue"),
+    },
     async asyncData({ $content, params, error }) {
         const page = await $content("portfolio")
             .fetch()
@@ -44,9 +31,10 @@ export default {
             });
         return {
             page,
-            projects: page.projects,
+            currentCategory: "",
         };
     },
+    // data: () => ({}),
     mounted() {
         let body = document.querySelector("body");
         body.style.background = this.page.bgColor;
@@ -54,7 +42,25 @@ export default {
     },
     computed: {
         categories() {
-            return this.projects.map((e) => e.category);
+            return this.page.projects
+                .map((e) => e.category)
+                .filter((v, i, a) => {
+                    return a.indexOf(v) === i && v !== undefined;
+                });
+        },
+        currentProjects() {
+            if (this.currentCategory) {
+                return this.page.projects.filter(
+                    (e) => e.category === this.currentCategory
+                );
+            }
+            return this.page.projects;
+        },
+    },
+    methods: {
+        setCurrentCategory(category) {
+            this.currentCategory = category;
+            console.log("setCurrentCategory", category);
         },
     },
 };
