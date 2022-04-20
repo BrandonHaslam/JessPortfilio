@@ -8,26 +8,41 @@
                 sm:text-[1.75rem]
                 md:text-[2rem]
                 font-semibold
+                list-none
             "
         >
             <!-- Internal -->
-            <NuxtLink to="/portfolio" class="navLink__animation"
-                >Portfolio</NuxtLink
-            >
-            <NuxtLink to="/about" class="navLink__animation">About</NuxtLink>
-            <span class="headerSegregate text-[24px] px-8 hidden sm:block"
-                >|</span
-            >
+            <li>
+                <NuxtLink to="/portfolio" class="navLink__animation"
+                    >Portfolio</NuxtLink
+                >
+            </li>
+            <li>
+                <NuxtLink to="/about" class="navLink__animation"
+                    >About</NuxtLink
+                >
+            </li>
+            <li>
+                <span class="headerSegregate text-[24px] px-8 hidden sm:block"
+                    >|</span
+                >
+            </li>
             <!-- External -->
-            <NuxtLink class="headerSegregate navLink__animation" to="/contact"
-                >Contact</NuxtLink
-            >
-            <a
-                href="https://www.linkedin.com/"
-                class="sm:flex sm:items-center h-16 text-[#C275FF] hidden"
-            >
-                <LinkedInSvg class="h-16" />
-            </a>
+            <li>
+                <NuxtLink
+                    class="headerSegregate navLink__animation"
+                    to="/contact"
+                    >Contact</NuxtLink
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.linkedin.com/"
+                    class="sm:flex sm:items-center h-16 text-[#C275FF] hidden"
+                >
+                    <LinkedInSvg class="h-16" alt="go to linkedin" />
+                </a>
+            </li>
         </ul>
     </nav>
 </template>
