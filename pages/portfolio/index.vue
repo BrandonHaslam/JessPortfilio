@@ -4,7 +4,9 @@
             class="section-colour flex justify-center items-center text-center"
         >
             <div>
-                <h1 class="text-[3rem] sm:text-[5rem]">{{ page.title }}</h1>
+                <h1 class="text-[3rem] sm:text-[5rem] text-blue-500">
+                    {{ page.title }}
+                </h1>
                 <PortfolioProjectButtonList
                     @setCurrentCategory="setCurrentCategory($event)"
                     :categories="categories"

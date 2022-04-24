@@ -2,7 +2,7 @@
     <div class="relative h-screen">
         <LayoutTheHeader />
         <Nuxt />
-        <!-- <LayoutTheFooter /> -->
+        <LayoutTheFooter />
     </div>
 </template>
 <style lang="postcss">

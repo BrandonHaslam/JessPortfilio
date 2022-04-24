@@ -1,14 +1,17 @@
 <template>
-    <nav>
+    <nav class="sm:block text-center sm:visible sm:pt-0 my-auto">
         <ul
             class="
                 flex flex-col
+                justify-center
                 sm:ml-auto sm:flex-row sm:items-center
                 text-[3.75rem]
                 sm:text-[1.75rem]
                 md:text-[2rem]
                 font-semibold
                 list-none
+                relative
+                text-white
             "
         >
             <!-- Internal -->
@@ -63,6 +66,10 @@ a {
 .headerSegregate {
     color: #c275ff;
 }
+li {
+    @apply sm:flex;
+}
+
 @media screen(sm) {
     .navLink__animation::before {
         position: absolute;
