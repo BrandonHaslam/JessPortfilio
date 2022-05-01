@@ -19,12 +19,14 @@
  
 <script>
 export default {
+    layout: "portfolio",
     components: {
         PortfolioProjectList: () =>
             import("~/components/Portfolio/ProjectList.vue"),
         PortfolioProjectButtonList: () =>
-            import("~/components/Portfolio/ProjectButtonList.vue"),
+            import("~/components/Portfolio/ButtonList.vue"),
     },
+
     async asyncData({ $content, params, error }) {
         const page = await $content("portfolio")
             .fetch()
@@ -36,7 +38,7 @@ export default {
             currentCategory: "",
         };
     },
-    // data: () => ({}),
+
     mounted() {
         let body = document.querySelector("body");
         body.style.background = this.page.bgColor;
@@ -69,8 +71,8 @@ export default {
 </script>
 <style lang="postcss" scoped>
 .section-colour {
-    background: linear-gradient(282.06deg, #050020 0%, #34005c 100.63%);
+    background: linear-gradient(265deg, #050020 0%, #34005c 100.63%);
     border-radius: 0px 0px 122px 122px;
-    @apply w-full min-h-[50vh] sm:h-[60vh];
+    @apply w-full min-h-[50vh];
 }
 </style>

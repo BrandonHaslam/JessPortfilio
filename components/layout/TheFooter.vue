@@ -1,5 +1,5 @@
 <template>
-    <footer class="mt-40">
+    <footer>
         <section>
             <!-- left -->
             Footer Lorem ipsum, dolor sit amet consectetur adipisicing elit.

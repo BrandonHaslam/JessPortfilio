@@ -4,8 +4,44 @@
     {
       "name": "Crystal Clear Holidays",
       "link": "CrystalClearHolidays",
-      "imageHref": "test project 1",
+      "image": true,
       "category": "web design"
+    },
+    {
+      "name": "Crystal Clear Holidays",
+      "link": "CrystalClearHolidays",
+      "image": true,
+      "category": "web design"
+    },
+    {
+      "name": "Crystal Clear Holidays",
+      "link": "CrystalClearHolidays",
+      "image": true,
+      "category": "Another category"
+    },
+    {
+      "name": "Crystal Clear Holidays",
+      "link": "CrystalClearHolidays",
+      "image": true,
+      "category": "Another category"
+    },
+    {
+      "name": "Crystal Clear Holidays",
+      "link": "CrystalClearHolidays",
+      "image": true,
+      "category": "web design"
+    },
+    {
+      "name": "Crystal Clear Holidays",
+      "link": "CrystalClearHolidays",
+      "image": true,
+      "category": "web design"
+    },
+    {
+      "name": "Crystal Clear Holidays",
+      "link": "CrystalClearHolidays",
+      "image": true,
+      "category": "Final category"
     }
   ]
 }

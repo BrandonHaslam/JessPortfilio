@@ -3,7 +3,7 @@
         <ul
             class="
                 flex flex-col
-                justify-center
+                justify-between
                 sm:ml-auto sm:flex-row sm:items-center
                 text-[3.75rem]
                 sm:text-[1.75rem]
@@ -16,12 +16,19 @@
         >
             <!-- Internal -->
             <li>
-                <NuxtLink to="/portfolio" class="navLink__animation"
-                    >Portfolio</NuxtLink
+                <NuxtLink
+                    to="/portfolio"
+                    class="navLink__animation"
+                    @click.native="$emit('closeNav')"
+                >
+                    Portfolio</NuxtLink
                 >
             </li>
             <li>
-                <NuxtLink to="/about" class="navLink__animation"
+                <NuxtLink
+                    to="/about"
+                    class="navLink__animation"
+                    @click.native="$emit('closeNav')"
                     >About</NuxtLink
                 >
             </li>
@@ -35,6 +42,7 @@
                 <NuxtLink
                     class="headerSegregate navLink__animation"
                     to="/contact"
+                    @click.native="$emit('closeNav')"
                     >Contact</NuxtLink
                 >
             </li>

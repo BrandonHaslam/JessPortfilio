@@ -7,14 +7,14 @@
             flex
             sm:items-center sm:h-auto
             p-layout
-            fixed
-            top-0
             w-full
             z-50
             transition-colors
             duration-500
+            fixed
+            top-0
         "
-        :class="{ 'bg-[#09032C]': scrolled }"
+        :class="{ '!bg-[#09032C]': scrolled }"
     >
         <section class="mr-auto z-50 flex items-start w-full">
             <NuxtLink to="/" aria-label="Link to Homepage">
@@ -25,11 +25,12 @@
             <HamburgerButton
                 class="sm:hidden ml-auto"
                 @toggleNavigation="NavbarToggle"
+                :toggleButton="mobileNavOpen"
             />
         </section>
         <section
             class="
-                absolute
+                fixed
                 top-0
                 duration-700
                 h-screen
@@ -40,9 +41,13 @@
                 px-[10vw]
                 sm:p-0
             "
-            :class="!this.mobileNavOpen ? '-left-full ' : 'left-0 bg-[#050020]'"
+            :class="
+                !this.mobileNavOpen
+                    ? '-left-full '
+                    : 'left-0 bg-[#050020] sm:bg-inherit'
+            "
         >
-            <LinkList />
+            <LinkList @closeNav="NavbarToggle" />
             <ContactInfo
                 class="invisible transition-visibility duration-500 my-12"
                 :class="{ '!visible': mobileNavOpen }"
@@ -66,7 +71,7 @@ export default {
     methods: {
         NavbarToggle() {
             this.mobileNavOpen = !this.mobileNavOpen;
-            this.mobileNavOpen ? this.disableScroll() : this.enableScroll();
+            // this.mobileNavOpen ? this.disableScroll() : this.enableScroll();
         },
         disableScroll() {
             document.body.style.overflow = "hidden";
@@ -85,3 +90,8 @@ export default {
     },
 };
 </script>
+<style lang="postcss" scoped>
+header {
+    background: linear-gradient(282.06deg, #050020 0%, #34005c 100.63%);
+}
+</style>
