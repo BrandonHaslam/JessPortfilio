@@ -40,7 +40,8 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Raleway:wght@500;600&display=swap'
-      }
+      },
+
     ]
   },
 

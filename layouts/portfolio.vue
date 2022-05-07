@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen">
+    <div class="h-screen relative flex flex-col">
         <LayoutTheHeader />
         <Nuxt />
         <LayoutTheFooter />

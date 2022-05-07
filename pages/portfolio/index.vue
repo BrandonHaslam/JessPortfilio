@@ -4,7 +4,7 @@
             class="section-colour flex justify-center items-center text-center"
         >
             <div>
-                <h1 class="text-[3rem] sm:text-[5rem] text-blue-500">
+                <h1 class="text-[3rem] sm:text-[7.5rem] mb-12">
                     {{ page.title }}
                 </h1>
                 <PortfolioProjectButtonList

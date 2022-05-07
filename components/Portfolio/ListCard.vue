@@ -4,25 +4,42 @@
             class="
                 relative
                 card
-                w-[30rem]
-                h-[30rem]
-                sm:w-[40rem] sm:h-[40rem]
-                rounded-3xl
-                flex
-                justify-center
-                align-center
-                p-8
-                bg-cover
+                w-[25rem]
+                h-[25rem]
+                sm:w-[30rem] sm:h-[30rem]
+                md:w-[40rem] md:h-[40rem]
                 mx-16
+                sm:mx-24
             "
         >
-            <img
-                class="self-center rounded-3xl shadow-lg shadow-black !block"
-                :src="require(`~/assets/images/projects/${image}/Card.png`)"
-                alt=""
-            />
+            <div
+                class="
+                    flex
+                    justify-center
+                    align-center
+                    w-full
+                    h-full
+                    cardBackground
+                    p-8
+                    bg-cover
+                    overflow-hidden
+                    rounded-3xl
+                    z-10
+                "
+            >
+                <img
+                    class="
+                        self-center
+                        rounded-3xl
+                        shadow-lg shadow-black
+                        !block
+                    "
+                    :src="require(`~/assets/images/projects/${image}/Card.png`)"
+                    alt=""
+                />
+            </div>
         </div>
-        <div class="px-16 w-full mb-20">
+        <div class="px-16 sm:px-24 w-full mb-20">
             <h2 class="text-[2.4rem] mt-4">
                 {{ project.name }}
             </h2>
@@ -42,7 +59,7 @@ export default {
         },
     },
     components: {
-        Arrow: () => import("@/assets/images/projects/arrow.svg"),
+        Arrow: () => import("@/assets/images/Arrow.svg"),
     },
     computed: {
         image() {
@@ -52,29 +69,29 @@ export default {
     mounted() {
         // addbackgroundimage
         this.$el.querySelector(
-            "div"
+            ".cardBackground"
         ).style.backgroundImage = `url(${require(`~/assets/images/projects/${this.project.link}/CardBackground.png`)})`;
     },
 };
 </script>
 <style scoped>
 .card {
-    /* opacity: 0.7; */
+    opacity: 0.7;
     transition: all 0.75s;
     z-index: 10;
 }
 .card:hover {
     transition: all 0.75s;
-    /* opacity: 1; */
+    opacity: 1;
 }
 .card:hover:before {
     transform: scale(1.05) rotate(0deg);
     transition: all 0.75s;
-    /* opacity: 1; */
+    opacity: 1;
     @apply border-[#C275FF];
 }
 .card:before {
     content: "";
-    @apply rounded-3xl border-2 border-[#1A133E] absolute top-0 left-0 w-full h-full transition-all duration-700 rotate-12 scale-105;
+    @apply -z-10 rounded-3xl border-2 border-[#1A133E] absolute top-0 left-0 w-full h-full transition-all duration-700 rotate-12 scale-[1.02];
 }
 </style>

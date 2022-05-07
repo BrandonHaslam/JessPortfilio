@@ -4,7 +4,6 @@
             <button
                 :key="`All button`"
                 :aria-label="`All button`"
-                class="ProjectButton"
                 @click="setCurrentCategory('')"
             >
                 All
@@ -13,7 +12,6 @@
                 v-for="category in categories"
                 :key="`${category} button`"
                 :aria-label="`${category} button`"
-                class="ProjectButton"
                 @click="setCurrentCategory(category)"
             >
                 {{ category }}
@@ -38,14 +36,15 @@ export default {
 };
 </script>
 <style scoped>
-.ProjectButton {
+button {
     @apply border border-[#C275FF]
-                    p-4
-                    mx-2
+                    px-4
+                    py-2
+                    mx-3
                     rounded-2xl
                     text-[#C275FF]
                     hover:bg-[#C275FF] hover:text-white
                     font-medium
-                    sm:text-[1.75rem];
+                    sm:text-[1.75rem] min-w-[8rem];
 }
 </style>

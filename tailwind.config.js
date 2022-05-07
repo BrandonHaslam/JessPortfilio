@@ -35,6 +35,9 @@ module.exports = {
       transitionProperty: {
         'visibility': 'visibility',
         'translate': 'translate',
+      },
+      fontFamily: {
+        raleway: ['Raleway', 'sans-serif'],
       }
 
     }
