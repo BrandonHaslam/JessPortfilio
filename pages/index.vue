@@ -10,10 +10,9 @@
                 !leading-tight
             "
         >
-            <span class="text-2xl sm:text-4xl font-normal">Hey, I'm Jess.</span>
-            <br class="my-16" />
-            <!-- Infinite scroll -->
-            I'm A <span>{{ currentWord }}</span> Designer
+            <span class="text-2xl sm:text-4xl font-normal">Hey, Im Jess.</span>
+            <br />
+            Im A <span>{{ currentWord }}</span> Designer
         </h1>
         <div class="flex flex-col sm:flex-row justify-center mb-16">
             <NuxtLink class="button-filled" to="/portfolio"
