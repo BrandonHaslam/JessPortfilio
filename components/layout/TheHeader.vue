@@ -90,8 +90,3 @@ export default {
     },
 };
 </script>
-<style lang="postcss" scoped>
-header {
-    background: linear-gradient(282.06deg, #050020 0%, #34005c 100.63%);
-}
-</style>

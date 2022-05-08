@@ -3,7 +3,7 @@
         <section
             class="section-colour flex justify-center items-center text-center"
         >
-            <div>
+            <div class="overflow-hidden">
                 <h1 class="text-[3rem] sm:text-[7.5rem] mb-12">
                     {{ page.title }}
                 </h1>
@@ -73,6 +73,6 @@ export default {
 .section-colour {
     background: linear-gradient(265deg, #050020 0%, #34005c 100.63%);
     border-radius: 0px 0px 122px 122px;
-    @apply w-full min-h-[50vh];
+    @apply w-full min-h-[40vh];
 }
 </style>
