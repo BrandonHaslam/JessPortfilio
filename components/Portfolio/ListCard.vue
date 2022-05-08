@@ -6,10 +6,9 @@
                 card
                 w-[25rem]
                 h-[25rem]
-                sm:w-[30rem] sm:h-[30rem]
-                md:w-[40rem] md:h-[40rem]
+                md:w-[30rem] md:h-[30rem]
+                lg:w-[35rem] lg:h-[35rem]
                 mx-16
-                sm:mx-24
             "
         >
             <div
