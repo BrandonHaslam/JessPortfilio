@@ -2,15 +2,16 @@
     <main class="flex flex-col justify-center items-center h-full">
         <h1
             class="
-                text-8xl
-                sm:text-9xl
+                text-7xl
+                sm:text-8xl
+                3xl:text-9xl
                 text-center
                 font-bold
                 mb-16
                 !leading-tight
             "
         >
-            <span class="text-2xl sm:text-4xl font-normal">Hey, Im Jess.</span>
+            <span class="text-2xl sm:text-3xl font-normal">Hey, Im Jess.</span>
             <br />
             Im A <span>{{ currentWord }}</span> Designer
         </h1>
@@ -67,12 +68,10 @@ span:nth-of-type(2) {
     text-align: center;
     min-width: 20ch;
     padding: 1.5rem 4.5rem;
-
     border-radius: 0% 45px 0% 45px;
     transition: all 500ms;
-    font-size: 2rem;
     font-weight: 600;
-    @apply my-4 sm:mx-8;
+    @apply my-4 sm:mx-8 text-[1.5rem] 3xl:text-[2rem];
 }
 .button {
     color: #8d34fe;

@@ -1,5 +1,5 @@
 <template>
-    <section class="flex">
+    <section class="flex mb-32 flex-col md:flex-row">
         <ContactForm />
         <ContactSideIcons />
     </section>

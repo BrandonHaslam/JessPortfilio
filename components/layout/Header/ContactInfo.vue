@@ -1,5 +1,5 @@
 <template>
-    <ul class="sm:hidden border-t border-[#C275FF] pt-auto overflow-hidden">
+    <ul class="border-t border-[#C275FF] pt-auto overflow-hidden">
         <!-- Linkedin -->
         <li>
             <a

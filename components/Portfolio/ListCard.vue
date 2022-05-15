@@ -7,7 +7,7 @@
                 w-[25rem]
                 h-[25rem]
                 md:w-[30rem] md:h-[30rem]
-                lg:w-[35rem] lg:h-[35rem]
+                3xl:w-[35rem] 3xl:h-[35rem]
                 mx-16
             "
         >

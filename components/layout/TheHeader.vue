@@ -3,7 +3,6 @@
         class="
             text-white
             !py-4
-            sm:!py-8
             flex
             sm:items-center sm:h-auto
             p-layout
@@ -18,9 +17,7 @@
     >
         <section class="mr-auto z-50 flex items-start w-full">
             <NuxtLink to="/" aria-label="Link to Homepage">
-                <Logo
-                    class="sm:static h-24 w-24 sm:h-36 sm:w-36 md:h-40 md:w-40"
-                />
+                <Logo class="h-24 w-24 sm:h-32 sm:w-32" />
             </NuxtLink>
             <HamburgerButton
                 class="sm:hidden ml-auto"
@@ -49,7 +46,13 @@
         >
             <LinkList @closeNav="NavbarToggle" />
             <ContactInfo
-                class="invisible transition-visibility duration-500 my-12"
+                class="
+                    sm:hidden
+                    invisible
+                    transition-visibility
+                    duration-500
+                    my-12
+                "
                 :class="{ '!visible': mobileNavOpen }"
             />
         </section>

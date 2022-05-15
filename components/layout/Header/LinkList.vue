@@ -7,7 +7,7 @@
                 sm:ml-auto sm:flex-row sm:items-center
                 text-[3.75rem]
                 sm:text-[1.75rem]
-                md:text-[2rem]
+                3xl:text-[2rem]
                 font-semibold
                 list-none
                 relative

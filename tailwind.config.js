@@ -23,10 +23,14 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+      '3xl': '1756px',
+      // => @media (min-width: 1536px) { ... }
     },
     extend: {
       screens: {
         'xs': '350px',
+        // => @media (min-width: 350px) { ... }
+        '3xl': '1750px',
         // => @media (min-width: 350px) { ... }
       },
       padding: {

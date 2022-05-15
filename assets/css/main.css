@@ -15,6 +15,32 @@
     overflow-x: hidden;
   }
 }
+.button-filled,
+.button {
+  text-align: center;
+  min-width: 20ch;
+  padding: 1.5rem 4.5rem;
+  border-radius: 0% 45px 0% 45px;
+  transition: all 500ms;
+  font-weight: 600;
+  @apply my-4 sm:mx-8 text-[1.5rem] 3xl:text-[2rem];
+}
+.button {
+  color: #8d34fe;
+  border: 2px solid #8d34fe;
+}
+.button:hover {
+  @apply text-white;
+}
+.button-filled {
+  background: linear-gradient(270deg, #c172ff 0%, #8d34fe 100%);
+}
+.button-filled:hover,
+.button:hover {
+  box-shadow: 3px 8px 15px rgba(191, 73, 247, 0.5);
+  transform: scale(1.1);
+  transition: all 500ms;
+}
 /* 
 @font-face {
   font-family: 'arboria', sans-serif;';
