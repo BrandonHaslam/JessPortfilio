@@ -42,6 +42,12 @@ module.exports = {
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
+      },
+      fontSize: {
+        'base': '1.6rem',
+      },
+      colors: {
+        'primary': '#c172ff'
       }
 
     }

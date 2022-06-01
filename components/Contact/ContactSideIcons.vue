@@ -8,12 +8,11 @@
             md:flex-col
             flex-wrap
             justify-center
-            md:justify-between
             content-center
             items-center
         "
     >
-        <div class="w-[28rem] h-60 lg:w-[30rem] lg:h-64 m-4">
+        <div class="w-[28rem] h-[16rem] m-4">
             <a
                 href="tel:078 5252 0444"
                 aria-label="Jessica Burrow's phone number, click to call"
@@ -23,7 +22,7 @@
                 <span>078 5252 0444</span>
             </a>
         </div>
-        <div class="w-[28rem] h-60 lg:w-[30rem] lg:h-64 m-4">
+        <div class="w-[28rem] h-60 m-4">
             <a
                 href="mailto:jess_burrow1@yahoo.co.uk"
                 aria-label="Jessica Burrow's email address, click to send an email"
@@ -33,7 +32,7 @@
                 <span>jess_burrow1@yahoo.co.uk</span>
             </a>
         </div>
-        <div class="w-[28rem] h-60 lg:w-[30rem] lg:h-64 m-4">
+        <div class="w-[28rem] h-60 m-4">
             <a aria-label="Jessica Burrow's location">
                 <PhoneSvg class="icon" />
                 <h4>Location</h4>
@@ -53,12 +52,12 @@ export default {
 </script>
 <style scoped>
 h4 {
-    @apply text-[2rem] font-bold;
+    @apply text-[2rem] font-medium;
 }
 .icon {
-    @apply text-[#C172FF] h-12 w-12;
+    @apply text-primary h-12 w-12;
 }
 a {
-    @apply h-full w-full flex flex-col justify-center items-center content-center border-[#C172FF] bg-[#1A133E] border-2 rounded-2xl text-center my-6 text-[1.8rem];
+    @apply h-full w-full flex flex-col justify-center items-center content-center border-primary bg-[rgba(26,19,62,0.5)] border-2 rounded-2xl text-center my-6 text-base;
 }
 </style>

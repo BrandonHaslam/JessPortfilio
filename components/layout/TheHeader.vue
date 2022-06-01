@@ -13,11 +13,11 @@
             fixed
             top-0
         "
-        :class="{ '!bg-[#09032C]': scrolled }"
+        :class="{ '!bg-[rgba(9,3,44,0.95)]': scrolled }"
     >
         <section class="mr-auto z-50 flex items-start w-full">
             <NuxtLink to="/" aria-label="Link to Homepage">
-                <Logo class="h-24 w-24 sm:h-32 sm:w-32" />
+                <Logo class="h-24 w-24 sm:h-28 sm:w-28" />
             </NuxtLink>
             <HamburgerButton
                 class="sm:hidden ml-auto"

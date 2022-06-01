@@ -49,7 +49,7 @@
             <li>
                 <a
                     href="https://www.linkedin.com/"
-                    class="sm:flex sm:items-center h-16 text-[#C275FF] hidden"
+                    class="sm:flex sm:items-center h-16 text-primary hidden"
                 >
                     <LinkedInSvg class="h-16" alt="go to linkedin" />
                 </a>
@@ -66,7 +66,7 @@ export default {
 };
 // accessibility
 </script>
-<style lang="postcss" scoped>
+<style  scoped>
 a {
     @apply my-8 sm:m-0 sm:px-8 relative;
     letter-spacing: 0.5px;
@@ -78,7 +78,7 @@ li {
     @apply sm:flex;
 }
 
-@media screen(sm) {
+@media screen and (min-width: 768px) {
     .navLink__animation::before {
         position: absolute;
         top: 50%;

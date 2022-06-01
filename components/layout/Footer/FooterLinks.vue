@@ -39,8 +39,7 @@ a {
 
 li {
     font-weight: 700;
-    font-size: 1.6rem;
     display: block;
-    @apply mx-4 md:mr-20 md:ml-0;
+    @apply text-base mx-4 md:mr-20 md:ml-0;
 }
 </style>

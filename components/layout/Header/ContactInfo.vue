@@ -40,7 +40,7 @@ export default {
     },
 };
 </script>
-<style lang="postcss" scoped>
+<style scoped>
 a {
     @apply pt-8 flex items-center text-[1.25rem] xs:text-[1.5rem];
 }
@@ -51,6 +51,6 @@ span {
     @apply h-14 w-14;
 }
 .iconContainer {
-    @apply text-[#C275FF] pr-8 max-w-full;
+    @apply text-primary pr-8 max-w-full;
 }
 </style>

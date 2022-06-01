@@ -1,6 +1,6 @@
 <template>
     <form
-        class="w-full md:w-3/5 flex flex-col text-[1.6rem] font-normal"
+        class="w-full md:w-3/5 flex flex-col text-base font-normal"
         name="contact"
         method="POST"
         data-netlify="true"
@@ -32,7 +32,10 @@
             placeholder="Your message here"
         ></textarea>
         <div class="w-full flex justify-center">
-            <button class="button-filled flex justify-center" type="submit">
+            <button
+                class="button-filled flex justify-center !w-[40rem]"
+                type="submit"
+            >
                 Send Message <MailSvg class="h-10 w-10 ml-4" />
             </button>
         </div>
@@ -47,14 +50,11 @@ export default {
 };
 </script>
 <style scoped>
-button {
-    width: 300px !important;
-}
 h3 {
     @apply text-[4.8rem] font-bold;
 }
 p {
-    @apply text-[1.6rem] mb-12;
+    @apply text-base mb-12;
 }
 input {
     @apply h-12 py-8;
@@ -67,6 +67,6 @@ textarea {
     @apply bg-[#1A133E] rounded-lg px-4 mb-6;
 }
 label {
-    @apply text-[1.6rem] font-medium;
+    @apply text-base font-medium;
 }
 </style>

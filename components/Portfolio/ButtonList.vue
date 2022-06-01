@@ -57,7 +57,7 @@ ul::-webkit-scrollbar {
     display: none;
 }
 button {
-    @apply border border-[#C275FF] px-2 xs:px-4 py-2 mx-3 rounded-2xl text-[#C275FF] hover:bg-[#C275FF] hover:text-white 
+    @apply border border-[#C275FF] px-2 xs:px-4 py-2 mx-3 rounded-2xl text-primary hover:bg-[#C275FF] hover:text-white 
     font-medium  md:text-[1.5rem] 3xl:text-[1.75rem] min-w-[10ch] whitespace-nowrap;
 }
 </style>
