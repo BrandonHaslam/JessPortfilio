@@ -1,7 +1,8 @@
 <template>
     <main class="project">
-        <h1>{{ this.$route.params.project }}</h1>
-        <h2>{{ page.title }}</h2>
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.description }}</h2>
+        <a :href="page.figma"><FigmaIcon />View Figma</a>
     </main>
 </template>
  

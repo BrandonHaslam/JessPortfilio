@@ -1,8 +1,5 @@
 <template>
-    <a
-        :href="`portfolio/${project.directory}`"
-        class="text-left text-[#3D307B]"
-    >
+    <a :href="`project/${project.directory}`" class="text-left text-[#3D307B]">
         <div
             class="
                 relative
