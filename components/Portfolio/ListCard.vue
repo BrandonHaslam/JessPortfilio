@@ -2,6 +2,7 @@
     <a
         :href="`portfolio/${project.directory}`"
         class="text-left text-[#3D307B]"
+        :id="`project-${project.directory}`"
     >
         <div
             class="
