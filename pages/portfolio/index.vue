@@ -23,14 +23,17 @@ export default {
             import("~/components/Portfolio/ProjectList.vue"),
         PortfolioProjectButtonList: () =>
             import("~/components/Portfolio/ButtonList.vue"),
+        ProjectListCard: () => import("~/components/Portfolio/ListCard.vue"),
     },
 
     async asyncData({ $content, params, error }) {
-        const page = await $content("portfolio")
+        const page = await $content("/projects")
+            .only(["title", "directory", "category"])
             .fetch()
             .catch((err) => {
                 error({ statusCode: 404, message: "Page not found" });
             });
+        console.log("page", page);
         return {
             page,
             currentCategory: "",
@@ -44,25 +47,29 @@ export default {
     },
     computed: {
         categories() {
-            return this.page.projects
+            let categories = this.page
                 .map((e) => e.category)
                 .filter((v, i, a) => {
-                    return a.indexOf(v) === i && v !== undefined;
+                    return a.indexOf(v) === i && v !== undefined && v !== "";
                 });
+            return categories;
         },
         currentProjects() {
             if (this.currentCategory) {
-                return this.page.projects.filter(
+                let category = this.page.filter(
                     (e) => e.category === this.currentCategory
                 );
+                console.log(this.page);
+                return category;
             }
-            return this.page.projects;
+            console.log(this.page);
+            return this.page;
         },
     },
     methods: {
         setCurrentCategory(category) {
             this.currentCategory = category;
-            console.log("setCurrentCategory", category);
+            // console.log("setCurrentCategory", category);
         },
     },
 };

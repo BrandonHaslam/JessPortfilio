@@ -1,5 +1,8 @@
 <template>
-    <a :href="`portfolio/${project.link}`" class="text-left text-[#3D307B]">
+    <a
+        :href="`portfolio/${project.directory}`"
+        class="text-left text-[#3D307B]"
+    >
         <div
             class="
                 relative
@@ -27,20 +30,23 @@
                 "
             >
                 <img
+                    v-if="image"
                     class="
                         self-center
                         rounded-3xl
                         shadow-lg shadow-black
                         !block
                     "
-                    :src="require(`~/assets/images/projects/${image}/Card.png`)"
+                    :src="
+                        require(`~/assets/images/projects/${project.directory}/Card.png`)
+                    "
                     alt=""
                 />
             </div>
         </div>
         <div class="px-16 sm:px-24 w-full mb-20">
             <h2 class="text-[2.4rem] mt-4">
-                {{ project.name }}
+                {{ project.title }}
             </h2>
             <span class="text-[2rem] flex items-baseline">
                 {{ project.category }}
@@ -62,14 +68,16 @@ export default {
     },
     computed: {
         image() {
-            return this.project?.link ? this.project.link : "Placeholder";
+            return this.project?.cardImage
+                ? this.project.cardImage
+                : "Placeholder";
         },
     },
     mounted() {
         // addbackgroundimage
         this.$el.querySelector(
             ".cardBackground"
-        ).style.backgroundImage = `url(${require(`~/assets/images/projects/${this.project.link}/CardBackground.png`)})`;
+        ).style.backgroundImage = `url(${require(`~/assets/images/projects/${this.project.directory}/CardBackground.png`)})`;
     },
 };
 </script>

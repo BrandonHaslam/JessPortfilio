@@ -1,5 +1,7 @@
 {
   "title": "I am test 2",
+  "cardImage": "",
+  "category": "",
   "bgColor": "gold",
   "color": "green"
 }

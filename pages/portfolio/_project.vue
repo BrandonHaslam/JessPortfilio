@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="project">
         <h1>{{ this.$route.params.project }}</h1>
         <h2>{{ page.title }}</h2>
     </main>
@@ -20,7 +20,7 @@ export default {
         };
     },
     mounted() {
-        let body = document.querySelector("body");
+        let body = document.querySelector(".project");
         body.style.background = this.page.bgColor;
         body.style.color = this.page.color;
     },

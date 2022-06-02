@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --project-main-background: "rgba(5, 0, 32, 1)";
+    --project-main-background-2: "rgba(26, 19, 62, 1)";
+    --project-bg-gradient-1: "rgba(5, 0, 32, 1)";
+    --project-bg-gradient-2: "rgba(52, 0, 92, 1)";
+    --project-base-color-1: "rgba(194, 117, 255, 1)";
+    --project-base-button-1: "rgba(193, 114, 255, 1)";
+    --project-base-button-2: "rgba(141, 52, 254, 1)";
+  }
   html {
     font-family: "Raleway", sans-serif;
     font-size: 62.5%;

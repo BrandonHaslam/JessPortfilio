@@ -1,5 +1,8 @@
 {
-  "title": "I am test 1",
+  "title": "Crystal Clear Holidays",
+  "directory": "CrystalClearHolidays",
+  "category": "Web Design",
   "bgColor": "#050020",
-  "color": "blue"
+  "color": "blue",
+  "content": {}
 }
