@@ -6,8 +6,8 @@
                 justify-between
                 sm:ml-auto sm:flex-row sm:items-center
                 text-[3.75rem]
-                sm:text-[1.75rem]
-                3xl:text-[2rem]
+                sm:text-[1.5rem]
+                3xl:text-[1.8rem]
                 font-semibold
                 list-none
                 relative

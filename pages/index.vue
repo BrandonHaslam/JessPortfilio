@@ -55,7 +55,7 @@ export default {
     methods: {},
 };
 </script>
-<style lang="postcss" scoped>
+<style scoped>
 span:nth-of-type(2) {
     background: linear-gradient(270deg, #c172ff 0%, #8d34fe 100%);
     background-clip: text;
@@ -85,8 +85,8 @@ span:nth-of-type(2) {
 }
 .button-filled:hover,
 .button:hover {
-    box-shadow: 3px 8px 15px rgba(191, 73, 247, 0.5);
-    transform: scale(1.1);
+    box-shadow: 2px 5px 10px rgba(191, 73, 247, 0.5);
+    transform: scale(1.05);
     transition: all 500ms;
 }
 @keyframes shimmy {

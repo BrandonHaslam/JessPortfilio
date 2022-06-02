@@ -27,7 +27,7 @@
 }
 .button-filled:hover,
 .button:hover {
-    box-shadow: 3px 8px 15px rgba(191, 73, 247, 0.5);
+    box-shadow: 2px 5px 10px rgba(191, 73, 247, 0.5);
     transform: scale(1.1);
     transition: all 500ms;
 }

@@ -2,7 +2,7 @@
     <div>
         <HeaderListItemSlot>Key Skills</HeaderListItemSlot>
         <!-- Make 2 then 4 per row -->
-        <section class="md:flex flex-wrap justify-evenly my-8">
+        <section class="xs:flex flex-wrap justify-evenly my-8">
             <SkillCard
                 v-for="card in cards"
                 :key="card.title"
@@ -24,27 +24,27 @@ export default {
     data: () => ({
         cards: [
             {
-                title: "Digital Design",
-                description:
-                    "I have experience in designing digital products for clients ranging from small startups to large corporations.",
-                icon: "DigitalDesign",
-            },
-            {
                 title: "App Design",
                 description:
-                    "I have experience in designing native iOS and Android applications for clients ranging from small startups to large corporations.",
+                    "By first defiing a clear user journey, encompassing both UI and UX, I create engaging and interactive applications.",
                 icon: "AppDesign",
             },
             {
                 title: "Branding",
                 description:
-                    "I have experience in designing logos, branding, and packaging for clients ranging from small startups to large corporations.",
+                    "Working in collaboration with the client, I ensure the visual identity to your business establish strong lasting impressions.",
                 icon: "Branding",
+            },
+            {
+                title: "Digital Design",
+                description:
+                    "Bridging the gap between form and function, I use modern techniques and sollutions to bring ideas to life.",
+                icon: "DigitalDesign",
             },
             {
                 title: "Web Design",
                 description:
-                    "I have experience in designing websites for clients ranging from small startups to large corporations.",
+                    "I design innovative, accessible and attractive websites to ensure your business stands out in the growing market. ",
                 icon: "WebDesign",
             },
         ],

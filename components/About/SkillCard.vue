@@ -6,7 +6,9 @@
             text-center
             p-8
             my-8
-            md:m-0 md:basis-2/5
+            md:my-8
+            basis-4/5
+            sm:basis-2/5
             lg:basis-1/5
         "
     >
@@ -19,10 +21,13 @@
 export default {
     name: "SkillCard",
     components: {
-        DigitalDesign: () => import("@/assets/images/About/DigitalDesign.svg"),
-        AppDesign: () => import("@/assets/images/About/AppDesign.svg"),
-        Branding: () => import("@/assets/images/About/Branding.svg"),
-        WebDesign: () => import("@/assets/images/About/WebDesign.svg"),
+        DigitalDesign: () =>
+            import("@/assets/images/About/SkillCard/DigitalDesign.svg"),
+        AppDesign: () =>
+            import("@/assets/images/About/SkillCard/AppDesign.svg"),
+        Branding: () => import("@/assets/images/About/SkillCard/Branding.svg"),
+        WebDesign: () =>
+            import("@/assets/images/About/SkillCard/WebDesign.svg"),
     },
     props: {
         title: {

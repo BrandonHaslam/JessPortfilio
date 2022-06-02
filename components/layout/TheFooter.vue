@@ -15,7 +15,7 @@
         >
             <div class="max-w-full">
                 <FooterLinks />
-                <h6
+                <h5
                     class="
                         md:mb-4
                         mt-12
@@ -26,12 +26,15 @@
                     "
                 >
                     Contact Info:
-                </h6>
+                </h5>
                 <FooterContact />
             </div>
             <MainLogo class="md:ml-auto h-48 w-48 md:h-60 md:w-60" />
         </section>
-        <h6 class="text-center mb-4">Developed by Waffle Web</h6>
+        <h6 class="text-center mb-4">
+            <a href="https://waffleweb.co.uk/">Developed by Waffle Web</a>
+            <a href="mailto:BHaslam1998@gmail.com"></a>
+        </h6>
     </footer>
 </template>
 <script>

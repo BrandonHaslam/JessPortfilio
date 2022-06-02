@@ -2,7 +2,7 @@
     <header
         class="
             text-white
-            !py-4
+            !py-2
             flex
             sm:items-center sm:h-auto
             p-layout
