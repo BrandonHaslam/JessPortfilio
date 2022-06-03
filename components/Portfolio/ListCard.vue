@@ -1,5 +1,8 @@
 <template>
-    <a :href="`project/${project.directory}`" class="text-left text-[#3D307B]">
+    <NuxtLink
+        :to="`/portfolio/${project.directory}`"
+        class="text-left text-[#3D307B]"
+    >
         <div
             class="
                 relative
@@ -50,7 +53,7 @@
                 <Arrow class="ml-auto" />
             </span>
         </div>
-    </a>
+    </NuxtLink>
 </template>
 <script>
 export default {
