@@ -1,6 +1,11 @@
 <template>
     <section class="flex flex-col justify-center items-center p-2">
-        <component :is="icon" class="m-2 scale-85 test" :id="iconName" />
+        <component
+            :is="icon"
+            class="m-2 scale-85 test"
+            :id="iconName"
+            :style="{ dropShadow: shadowString }"
+        />
         <!-- <img
             class="!block"
             :src="require(`@/assets/images/About/Figma.svg`)"
@@ -40,11 +45,25 @@ export default {
         Photoshop: () => import("@/assets/images/About/Software/Photoshop.svg"),
         SketchUp: () => import("@/assets/images/About/Software/SketchUp.svg"),
     },
-    // mounted() {
-    //     const icon = this.$el.querySelector("img");
-    //     // icon.style.fill = this.colour;
-    //     icon.style.boxShadow = `0 7px 5px ${this.shadow}`;
-    //     console.log(icon);
-    // },
+    computed: {
+        shadowString() {
+            return `0 3px 7px ${this.shadow}`;
+        },
+    },
+    updated() {
+        console.log();
+        const icon = this.$el.querySelector("svg");
+        icon.style.setProperty(
+            "-webkit-filter",
+            `drop-shadow(${this.shadowString})`
+        );
+
+        console.log(icon);
+    },
 };
 </script>
+<style scoped>
+/* svg {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+} */
+</style>

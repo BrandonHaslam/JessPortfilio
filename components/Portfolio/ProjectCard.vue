@@ -28,6 +28,9 @@
                     rounded-3xl
                     z-10
                 "
+                :style="{
+                    backgroundImage: `url(${require(`~/assets/images/projects/${this.project.directory}/${this.project.card.background}`)})`,
+                }"
             >
                 <img
                     v-if="image"
@@ -38,7 +41,7 @@
                         !block
                     "
                     :src="
-                        require(`~/assets/images/projects/${project.directory}/Card.png`)
+                        require(`~/assets/images/projects/${project.directory}/${project.card.foreground}`)
                     "
                     alt=""
                 />
@@ -57,6 +60,7 @@
 </template>
 <script>
 export default {
+    name: "ProjectCard",
     props: {
         project: {
             type: Object,
@@ -73,12 +77,12 @@ export default {
                 : "Placeholder";
         },
     },
-    mounted() {
-        // addbackgroundimage
-        this.$el.querySelector(
-            ".cardBackground"
-        ).style.backgroundImage = `url(${require(`~/assets/images/projects/${this.project.directory}/CardBackground.png`)})`;
-    },
+    // mounted() {
+    //     // addbackgroundimage
+    //     this.$el.querySelector(
+    //         ".cardBackground"
+    //     ).style.backgroundImage = `url(${require(`~/assets/images/projects/${this.project.directory}/${this.project.card.background}`)})`;
+    // },
 };
 </script>
 <style scoped>

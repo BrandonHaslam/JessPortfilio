@@ -14,7 +14,7 @@
 export default {
     name: "ProjectList",
     components: {
-        ProjectListCard: () => import("~/components/Portfolio/ListCard.vue"),
+        ProjectListCard: () => import("~/components/Portfolio/ProjectCard.vue"),
     },
 
     props: {

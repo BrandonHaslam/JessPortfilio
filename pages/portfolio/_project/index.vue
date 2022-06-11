@@ -1,8 +1,17 @@
 <template>
-    <main class="project">
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.description }}</h2>
-        <!-- <a :href="page.figma"><FigmaIcon />View Figma</a> -->
+    <main>
+        <Hero
+            :hero="page.content.hero"
+            :directory="page.directory"
+            :styles="page.styles"
+        />
+        <!-- <Preview /> -->
+        <Details :details="page.content.projectDetails" :styles="page.styles" />
+        <!-- <DesktopScreenShots /> -->
+        <!-- <Solution /> -->
+        <!-- <MobileScreenShots /> -->
+        <!-- <StyleSheet /> -->
+        <!-- <MoreProjects /> -->
     </main>
 </template>
  
@@ -10,7 +19,6 @@
 export default {
     async asyncData({ $content, params, error }) {
         const slug = `projects/${params.project}` || "index";
-        console.log(slug);
         const page = await $content(slug)
             .fetch()
             .catch((err) => {
@@ -18,13 +26,29 @@ export default {
             });
         return {
             page,
+            pageStyles: page.styles,
         };
     },
+    layout: "portfolio",
+    components: {
+        Hero: () => import("@/components/Project/ProjectHero.vue"),
+        Details: () =>
+            import("~/components/Project/ProjectDetails/Details.vue"),
+    },
+    beforeCreate() {
+        // console.log("beforeCreate");
+        // root.style.setProperty("--project-main-background", "#fafafa");
+    },
     mounted() {
-        console.log(this.page);
-        let body = document.querySelector(".project");
-        body.style.background = this.page.bgColor;
-        body.style.color = this.page.color;
+        let rootBefore = this.$store.state.projectStyles;
+        console.log("rootBefore", rootBefore);
+
+        this.$store.commit("setColours", this.pageStyles);
+        let rootAfter = this.$store.state.projectStyles;
+        console.log("rootAfter", rootAfter);
+        // let body = document.querySelector(".project");
+        // body.style.background = this.page.styles.bgColor;
+        // body.style.color = this.page.styles.color;
     },
 };
 </script>
