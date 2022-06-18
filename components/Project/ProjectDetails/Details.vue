@@ -1,6 +1,15 @@
 <template>
-    <div class="details xs:flex flex-wrap justify-evenly my-8">
-        <DetailsCard v-for="card in details" :key="card.title" :data="card" />
+    <div class="details">
+        <h2 class="text-center mt-16 text-[4.2rem] font-bold">
+            Project Details
+        </h2>
+        <div class="details xs:flex flex-wrap justify-evenly mt-16">
+            <DetailsCard
+                v-for="card in details"
+                :key="card.title"
+                :data="card"
+            />
+        </div>
     </div>
 </template>
 
@@ -31,9 +40,3 @@ export default {
     },
 };
 </script>
-
-<style>
-.text {
-    color: v-bind(color);
-}
-</style>

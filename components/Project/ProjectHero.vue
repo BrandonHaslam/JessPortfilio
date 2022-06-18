@@ -1,14 +1,27 @@
 <template>
     <Section class="w-full relative overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img
-                class="w-full h-full object-cover blur-[2px]"
-                :src="
-                    require(`~/assets/images/projects/${this.directory}/${this.hero.background.image}`)
-                "
-                alt=""
-                srcset=""
-            />
+            <picture>
+                <source
+                    media="(max-width:799px)"
+                    :srcset="
+                        require(`~/assets/images/projects/${this.directory}/Mobile/${this.hero.background.image.mobile}`)
+                    "
+                />
+                <source
+                    media="(min-width:800px)"
+                    :srcset="
+                        require(`~/assets/images/projects/${this.directory}/Desktop/${this.hero.background.image.desktop}`)
+                    "
+                />
+                <img
+                    class="w-full h-full object-cover blur-[2px]"
+                    :src="
+                        require(`~/assets/images/projects/${this.directory}/Desktop/${this.hero.background.image.desktop}`)
+                    "
+                    alt=""
+                />
+            </picture>
         </div>
         <div
             class="absolute inset-0 flex items-center"
@@ -29,7 +42,9 @@
                 </div>
                 <a
                     v-if="this.hero.figma.desktopLink"
-                    :style="figmaStyles"
+                    :style="!hovered ? figmaStyles : figmaHoverStyles"
+                    @mouseenter="hovered = true"
+                    @mouseleave="hovered = false"
                     class="
                         hidden
                         sm:block
@@ -45,6 +60,23 @@
                     "
                     :href="hero.figma.desktopLink"
                     ><FigmaLogo class="inline mr-6" />View Figma</a
+                >
+                <a
+                    v-if="this.hero.figma.mobileLink"
+                    :style="figmaStyles"
+                    class="
+                        mx-auto
+                        sm:hidden
+                        py-10
+                        px-20
+                        rounded-full
+                        text-[1.8rem]
+                        font-bold
+                        w-1/2
+                        flex
+                    "
+                    :href="hero.figma.mobileLink"
+                    ><FigmaLogo class="inline" />View Figma</a
                 >
                 <!-- , , hover:bg-[${this.hero.figma.hoverBackgroundColor}] -->
             </div>
@@ -66,12 +98,14 @@ export default {
             type: String,
             required: true,
         },
-        styles: {
-            type: Object,
-            required: true,
-        },
     },
+    data: () => ({
+        hovered: false,
+    }),
     computed: {
+        styles() {
+            return this.$store.state.projectStyles;
+        },
         createBackgroundString() {
             return `linear-gradient(180deg, ${this.hero.background.colorOne}, ${this.hero.background.colorTwo})`;
         },
@@ -79,8 +113,11 @@ export default {
             return this.hero.figma;
         },
         figmaStyles() {
-            return `color:${this.figma.color}; border:2px solid ${this.figma.color}; background: ${this.figma.bgColor}`;
+            return `color:${this.styles.colorLight}; border:2px solid ${this.styles.colorLight}; background: ${this.styles.colorDarkest}`;
             // return "text-[blue] hover:text-[green]";
+        },
+        figmaHoverStyles() {
+            return `color:white; border:2px solid ${this.styles.colorLight}; background: ${this.styles.colorDark}`;
         },
     },
     // mounted() {

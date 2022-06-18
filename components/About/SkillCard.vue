@@ -1,7 +1,7 @@
 <template>
     <div
         class="
-            bg-[rgba(26,19,62,1)]
+            bg-[rgba(26,19,62,0.2)]
             rounded-3xl
             text-center
             p-8

@@ -47,7 +47,7 @@ export default {
     },
     computed: {
         shadowString() {
-            return `0 3px 7px ${this.shadow}`;
+            return `0 3px 5px ${this.shadow}`;
         },
     },
     updated() {

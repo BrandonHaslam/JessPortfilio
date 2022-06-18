@@ -9,27 +9,19 @@
                 justify-center
                 align-center
                 px-12
-                md:px-40
+                md:px-20
+                lg:px-40
                 py-24
             "
         >
             <div class="max-w-full">
                 <FooterLinks />
-                <h5
-                    class="
-                        md:mb-4
-                        mt-12
-                        text-[2rem]
-                        font-bold
-                        md:text-left
-                        text-center
-                    "
-                >
+                <h5 class="md:mb-4 mt-12 text-[2rem] font-bold">
                     Contact Info:
                 </h5>
                 <FooterContact />
             </div>
-            <MainLogo class="md:ml-auto h-48 w-48 md:h-60 md:w-60" />
+            <MainLogo class="md:ml-auto" />
         </section>
         <h6 class="text-center mb-4">
             <a href="https://waffleweb.co.uk/">Developed by Waffle Web</a>
@@ -42,7 +34,7 @@ export default {
     components: {
         FooterContact: () => import("./Footer/FooterContact"),
         FooterLinks: () => import("./Footer/FooterLinks"),
-        MainLogo: () => import("@/assets/images/CircleLogo.svg"),
+        MainLogo: () => import("@/assets/images/Logo2.svg"),
     },
 };
 </script>

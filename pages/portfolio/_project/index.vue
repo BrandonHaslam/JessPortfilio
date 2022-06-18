@@ -1,17 +1,13 @@
 <template>
     <main>
-        <Hero
-            :hero="page.content.hero"
-            :directory="page.directory"
-            :styles="page.styles"
-        />
+        <Hero :hero="page.content.hero" :directory="page.directory" />
         <!-- <Preview /> -->
         <Details :details="page.content.projectDetails" :styles="page.styles" />
-        <!-- <DesktopScreenShots /> -->
-        <!-- <Solution /> -->
-        <!-- <MobileScreenShots /> -->
-        <!-- <StyleSheet /> -->
-        <!-- <MoreProjects /> -->
+        <DesktopScreenShots :screen-shots="page.content.screenShots[0]" />
+        <Solution :solution="page.content.solution" />
+        <MobileScreenShots :screen-shots="page.content.screenShots[1]" />
+        <StyleSheet :stylesheet="page.content.components" />
+        <MoreProjects />
     </main>
 </template>
  
@@ -34,27 +30,23 @@ export default {
         Hero: () => import("@/components/Project/ProjectHero.vue"),
         Details: () =>
             import("~/components/Project/ProjectDetails/Details.vue"),
-    },
-    beforeCreate() {
-        // console.log("beforeCreate");
-        // root.style.setProperty("--project-main-background", "#fafafa");
+        DesktopScreenShots: () =>
+            import("~/components/Project/DesktopScreenShots.vue"),
+        Solution: () => import("~/components/Project/Solution.vue"),
+        MobileScreenShots: () =>
+            import("~/components/Project/MobileScreenShots.vue"),
+        StyleSheet: () => import("~/components/Project/StyleSheet.vue"),
+        MoreProjects: () => import("~/components/Project/MoreProjects.vue"),
     },
     mounted() {
-        let rootBefore = this.$store.state.projectStyles;
-        console.log("rootBefore", rootBefore);
-
         this.$store.commit("setColours", this.pageStyles);
-        let rootAfter = this.$store.state.projectStyles;
-        console.log("rootAfter", rootAfter);
-        // let body = document.querySelector(".project");
-        // body.style.background = this.page.styles.bgColor;
-        // body.style.color = this.page.styles.color;
+        this.$store.commit("setDirectory", this.page.directory);
     },
 };
 </script>
 <style scoped>
 body {
-    background: #050020;
+    background: rgb(5, 0, 32);
 }
 h1 {
     font-size: 40px;

@@ -2,7 +2,7 @@
     <header
         class="
             text-white
-            !py-2
+            sm:!py-8
             flex
             sm:items-center sm:h-auto
             p-layout
@@ -12,12 +12,13 @@
             duration-500
             fixed
             top-0
+            sm:rounded-bl-full
         "
         :class="{ '!bg-[rgba(9,3,44,0.95)]': scrolled }"
     >
         <section class="mr-auto z-50 flex items-start w-full">
             <NuxtLink to="/" aria-label="Link to Homepage">
-                <Logo class="h-24 w-24 sm:h-28 sm:w-28" />
+                <Logo class="my-8 sm:m-0" />
             </NuxtLink>
             <HamburgerButton
                 class="sm:hidden ml-auto"
@@ -63,7 +64,7 @@ export default {
     components: {
         HamburgerButton: () =>
             import("@/components/layout/Header/HamburgerButton.vue"),
-        Logo: () => import("@/assets/images/CircleLogo.svg"),
+        Logo: () => import("@/assets/images/Logo.svg"),
         LinkList: () => import("@/components/layout/Header/LinkList.vue"),
         ContactInfo: () => import("./Header/ContactInfo.vue"),
     },

@@ -3,11 +3,11 @@
   "directory": "LateremGroup",
   "category": "Web Design",
   "styles": {
-    "colorOne": "rgba(1,0,35,1)",
-    "colorTwo": "rgba(23,22,79,1)",
-    "colorThree": "rgba(112,152,255,1)",
-    "colorFour": "rgba(50,124,220,1)",
-    "color": "blue"
+    "colorDarkest": "rgb(5,0,32)",
+    "colorDark": "rgba(23,22,79,1)",
+    "colorLight": "rgb(112,152,255)",
+    "colorLightest": "rgb(50,124,220)",
+    "text": "white"
   },
   "card": {
     "foreground": "Card.png",
@@ -28,13 +28,17 @@
         "hoverBackgroundColor": "rgba(23,22,79,1)",
         "hoverColor": "white"
       },
-
       "background": {
-        "image": "LateremHeaderImage.jpg",
+        "image": {
+          "mobile": "LateremMobHero.jpg",
+          "desktop": "LateremHeaderImage.jpg",
+          "alt": "Laterem Group Header Image"
+        },
         "colorOne": "rgba(1, 0, 35, 0.5)",
         "colorTwo": "rgba(1, 0, 35, 1)"
       }
     },
+    "preview": {},
     "projectDetails": [
       {
         "title": "Brand Identity",
@@ -48,6 +52,31 @@
         "title": "Web Design",
         "description": "To guide the user through the site fluently, I used simple but effective interactions, whilst using bold imagery to convey Laterem's impressive portfolio."
       }
-    ]
+    ],
+    "solution": {
+      "image": {
+        "mobile": "LateremSolution.png",
+        "desktop": "LateremSolution.png"
+      },
+      "alt": "Laterem Group Website on mobile",
+      "text": [
+        "With 3 seperate sectors of the company, I created the branding to assist the user to clearly navigate and identify between their property, investment and development industries. Profesionalism and reliability are qualities I implimented into each section to reflect the company, qualities potential clients wil be looking for in their chosen organisation.",
+        "Laterem now has a unique and insightful website to intrigue new and existing clients to enquire about their services."
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "LateremCentre.png",
+        "mobile": "LateremCentre.png"
+      },
+      {
+        "desktop": "LateremSecond.png",
+        "mobile": "LateremSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "LateremProject.png",
+      "Mobile": "LateremProjectDetails.png"
+    }
   }
 }

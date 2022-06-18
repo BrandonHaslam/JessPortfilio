@@ -7,7 +7,7 @@
 export default {
     name: "Logo",
     components: {
-        MainLogo: () => import("@/assets/images/CircleLogo.svg"),
+        MainLogo: () => import("@/assets/images/Logo.svg"),
     },
 };
 </script>
