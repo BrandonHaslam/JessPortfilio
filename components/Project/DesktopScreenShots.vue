@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :style="backgroundStyles">
         <picture>
             <source
                 media="(max-width:799px)"
@@ -35,6 +35,12 @@ export default {
     computed: {
         directory() {
             return this.$route.params.project;
+        },
+        backgroundStyles() {
+            return {
+                background:
+                    "linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%))",
+            };
         },
     },
 };

@@ -38,13 +38,13 @@ export default {
         },
     },
     mounted() {
-        console.log(this.screenShots);
-        console.log(
-            `~/assets/images/projects/${this.directory}/Mobile/${this.screenShots.mobile}`
-        );
-        console.log(
-            `~/assets/images/projects/${this.directory}/Desktop/${this.screenShots.desktop}`
-        );
+        // console.log(this.screenShots);
+        // console.log(
+        //     `~/assets/images/projects/${this.directory}/Mobile/${this.screenShots.mobile}`
+        // );
+        // console.log(
+        //     `~/assets/images/projects/${this.directory}/Desktop/${this.screenShots.desktop}`
+        // );
     },
 };
 </script>

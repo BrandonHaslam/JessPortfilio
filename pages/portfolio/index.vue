@@ -19,11 +19,10 @@
 export default {
     layout: "portfolio",
     components: {
-        PortfolioProjectList: () =>
-            import("~/components/Portfolio/ProjectList.vue"),
         PortfolioProjectButtonList: () =>
             import("~/components/Portfolio/ButtonList.vue"),
-        ProjectListCard: () => import("~/components/Portfolio/ProjectCard.vue"),
+        PortfolioProjectList: () =>
+            import("~/components/Portfolio/ProjectList.vue"),
     },
 
     async asyncData({ $content, params, error }) {
