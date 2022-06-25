@@ -34,7 +34,7 @@ export default {
     components: {
         FooterContact: () => import("./Footer/FooterContact"),
         FooterLinks: () => import("./Footer/FooterLinks"),
-        MainLogo: () => import("@/assets/images/Logo2.svg"),
+        MainLogo: () => import("@/assets/images/NewLogo.svg"),
     },
 };
 </script>
