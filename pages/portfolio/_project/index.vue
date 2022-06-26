@@ -28,7 +28,8 @@ export default {
     layout: "portfolio",
     components: {
         Hero: () => import("@/components/Project/ProjectHero.vue"),
-        DevicePreview: () => import("~/components/Project/DevicePreview.vue"),
+        DevicePreview: () =>
+            import("~/components/Project/DevicePreview/DevicePreview.vue"),
         Details: () =>
             import("~/components/Project/ProjectDetails/Details.vue"),
         DesktopScreenShots: () =>
