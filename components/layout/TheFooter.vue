@@ -8,7 +8,7 @@
                 items-center
                 justify-center
                 align-center
-                px-12
+                px-4
                 md:px-20
                 lg:px-40
                 py-24

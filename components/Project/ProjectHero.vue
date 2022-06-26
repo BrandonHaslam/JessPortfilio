@@ -72,13 +72,12 @@
                         rounded-full
                         text-[1.8rem]
                         font-bold
-                        w-1/2
                         flex
+                        justify-center
                     "
                     :href="hero.figma.mobileLink"
-                    ><FigmaLogo class="inline" />View Figma</a
+                    ><FigmaLogo class="inline mr-6" />View Figma</a
                 >
-                <!-- , , hover:bg-[${this.hero.figma.hoverBackgroundColor}] -->
             </div>
         </div>
     </Section>

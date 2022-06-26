@@ -1,13 +1,13 @@
 <template>
     <main>
         <Hero :hero="page.content.hero" :directory="page.directory" />
-        <!-- <Preview /> -->
+        <DevicePreview />
         <Details :details="page.content.projectDetails" :styles="page.styles" />
         <DesktopScreenShots :screen-shots="page.content.screenShots[0]" />
         <Solution :solution="page.content.solution" />
         <MobileScreenShots :screen-shots="page.content.screenShots[1]" />
         <StyleSheet :stylesheet="page.content.components" />
-        <MoreProjects />
+        <!-- <MoreProjects /> -->
     </main>
 </template>
  
@@ -28,6 +28,7 @@ export default {
     layout: "portfolio",
     components: {
         Hero: () => import("@/components/Project/ProjectHero.vue"),
+        DevicePreview: () => import("~/components/Project/DevicePreview.vue"),
         Details: () =>
             import("~/components/Project/ProjectDetails/Details.vue"),
         DesktopScreenShots: () =>
