@@ -23,13 +23,13 @@ export default {
 </script>
 <style scoped>
 .mobile {
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25), 0px 0px 5px white;
     aspect-ratio: 9 / 17.5;
     width: 75%;
     max-width: 350px;
     border: 10px solid black;
     border-radius: 40px;
-    outline: 1px solid white;
+    /* outline: 1px solid white; */
     overflow-y: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none;
@@ -44,6 +44,7 @@ export default {
 
 .camera-container {
     position: absolute;
+    margin-top: -1px;
     top: 0;
     transform: translateX(50%);
     width: 50%;
