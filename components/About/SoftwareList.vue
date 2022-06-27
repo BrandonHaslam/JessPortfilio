@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="software-list sm:text-[1rem]">
         <HeadingListItemSlot>Software</HeadingListItemSlot>
         <section class="flex justify-evenly flex-wrap">
             <SoftwareListItem
@@ -58,3 +58,17 @@ export default {
     },
 };
 </script>
+<style scoped>
+.software-list {
+    background: linear-gradient(282.06deg, #050020 0%, #34005c 100.63%);
+    border-radius: 50px;
+    margin: 0 -5vw 4rem;
+    padding: 5rem;
+}
+@media (min-width: 640px) {
+    .software-list {
+        margin: 0 -5rem 4rem;
+        border-radius: 100px;
+    }
+}
+</style>

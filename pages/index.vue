@@ -15,7 +15,7 @@
             <br />
             Im A <span>{{ currentWord }}</span> Designer
         </h1>
-        <div class="flex flex-col sm:flex-row justify-center mb-16">
+        <div class="sm:flex mb-16 text-center">
             <NuxtLink class="button-filled" to="/portfolio"
                 >View My Portfolio</NuxtLink
             >
@@ -63,32 +63,7 @@ span:nth-of-type(2) {
     animation: shimmy 3s infinite;
     animation-direction: alternate;
 }
-.button-filled,
-.button {
-    text-align: center;
-    min-width: 20ch;
-    padding: 1.5rem 4.5rem;
-    border-radius: 0% 45px 0% 45px;
-    transition: all 500ms;
-    font-weight: 600;
-    @apply my-4 sm:mx-8 text-[1.5rem] 3xl:text-[2rem];
-}
-.button {
-    color: #8d34fe;
-    border: 2px solid #8d34fe;
-}
-.button:hover {
-    @apply text-white;
-}
-.button-filled {
-    background: linear-gradient(270deg, #c172ff 0%, #8d34fe 100%);
-}
-.button-filled:hover,
-.button:hover {
-    box-shadow: 2px 5px 10px rgba(191, 73, 247, 0.5);
-    transform: scale(1.05);
-    transition: all 500ms;
-}
+
 @keyframes shimmy {
     0% {
         transform: translate(0, 0);

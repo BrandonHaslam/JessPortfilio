@@ -20,8 +20,10 @@
 }
 .button-filled,
 .button {
+  display: block;
   text-align: center;
   min-width: 20ch;
+  max-width: 40ch;
   padding: 1.5rem 4.5rem;
   border-radius: 0% 45px 0% 45px;
   transition: all 500ms;

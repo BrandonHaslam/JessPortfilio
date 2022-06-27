@@ -1,19 +1,21 @@
 <template>
     <div class="mobile relative">
-        <div class="camera-container">
+        <div class="camera-container z-10">
             <div class="camera">
                 <div class="lense"></div>
             </div>
             <div class="speaker" />
         </div>
-        <img
-            class="w-full"
-            :src="
-                require('~/assets/images/projects/LateremGroup/Mobile/LateremMobileImage.jpg')
-            "
-            alt=""
-            srcset=""
-        />
+        <div class="screen">
+            <img
+                class="w-full"
+                :src="
+                    require('~/assets/images/projects/LateremGroup/Mobile/LateremMobileImage.jpg')
+                "
+                alt=""
+                srcset=""
+            />
+        </div>
     </div>
 </template>
 <script>
@@ -23,23 +25,32 @@ export default {
 </script>
 <style scoped>
 .mobile {
+    position: relative;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25), 0px 0px 5px white;
-    aspect-ratio: 9 / 17.5;
+    aspect-ratio: 9 / 17;
     width: 75%;
     max-width: 350px;
     border: 10px solid black;
     border-radius: 40px;
+    overflow: hidden;
     /* outline: 1px solid white; */
+}
+
+.mobile::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
     overflow-y: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
-}
-
-.mobile::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
 }
 
 .camera-container {
@@ -67,7 +78,7 @@ export default {
 .lense {
     position: absolute;
     transform: translate(25%, 25%);
-    background: #091427;
+    background: rgb(9, 20, 39);
     height: 8px;
     width: 8px;
     border-radius: 100%;

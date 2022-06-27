@@ -32,11 +32,8 @@
             placeholder="Your message here"
         ></textarea>
         <div class="w-full flex justify-center">
-            <button
-                class="button-filled flex justify-center !w-[40rem]"
-                type="submit"
-            >
-                Send Message <MailSvg class="h-10 w-10 ml-4" />
+            <button class="button-filled !w-[40rem]" type="submit">
+                Send Message <MailSvg class="h-10 w-10 ml-4 inline" />
             </button>
         </div>
     </form>

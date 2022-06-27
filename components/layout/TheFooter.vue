@@ -15,7 +15,7 @@
             "
         >
             <div class="max-w-full">
-                <FooterLinks />
+                <!-- <FooterLinks /> -->
                 <h5 class="md:mb-4 mt-12 text-[2rem] font-bold">
                     Contact Info:
                 </h5>
@@ -33,7 +33,7 @@
 export default {
     components: {
         FooterContact: () => import("./Footer/FooterContact"),
-        FooterLinks: () => import("./Footer/FooterLinks"),
+        // FooterLinks: () => import("./Footer/FooterLinks"),
         MainLogo: () => import("@/assets/images/NewLogo.svg"),
     },
 };

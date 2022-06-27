@@ -19,11 +19,10 @@
             </p>
             <div
                 class="
-                    flex flex-col
-                    sm:flex-row
-                    justify-center
+                    sm:flex sm:justify-center
                     lg:justify-start
                     mb-16
+                    text-center
                 "
             >
                 <NuxtLink class="button-filled !ml-0" to="/portfolio"

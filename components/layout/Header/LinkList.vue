@@ -68,16 +68,15 @@ export default {
 </script>
 <style  scoped>
 a {
-    @apply my-8 sm:m-0 sm:px-8 relative;
+    @apply sm:px-8 relative;
     letter-spacing: 0.5px;
 }
 .headerSegregate {
     color: #c275ff;
 }
 li {
-    @apply sm:flex;
+    @apply my-4 sm:m-0 sm:flex;
 }
-
 @media screen and (min-width: 768px) {
     .navLink__animation::before {
         position: absolute;
