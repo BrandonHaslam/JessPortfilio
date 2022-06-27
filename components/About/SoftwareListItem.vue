@@ -47,7 +47,7 @@ export default {
     },
     computed: {
         shadowString() {
-            return `0 3px 5px ${this.shadow}`;
+            return `0 4px 3px ${this.shadow}`;
         },
     },
     updated() {
@@ -62,8 +62,3 @@ export default {
     },
 };
 </script>
-<style scoped>
-/* svg {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-} */
-</style>

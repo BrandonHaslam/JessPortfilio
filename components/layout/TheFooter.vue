@@ -11,17 +11,14 @@
                 px-4
                 md:px-20
                 lg:px-40
-                py-24
+                py-12
+                text-center
             "
         >
             <div class="max-w-full">
-                <!-- <FooterLinks /> -->
-                <h5 class="md:mb-4 mt-12 text-[2rem] font-bold">
-                    Contact Info:
-                </h5>
                 <FooterContact />
             </div>
-            <MainLogo class="md:ml-auto" />
+            <MainLogo class="mb-12 md:mb-0 md:ml-auto" />
         </section>
         <h6 class="text-center mb-4">
             <a href="https://waffleweb.co.uk/">Developed by Waffle Web</a>

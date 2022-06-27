@@ -7,7 +7,7 @@
                 aria-label="Jessica Burrow's Phone number, click to call"
             >
                 <span>
-                    <h1><PhoneSvg class="icon" /> Phone Number:</h1>
+                    <h1>Phone Number:</h1>
                     078 5252 0444
                 </span>
             </a>
@@ -19,15 +19,14 @@
                 aria-label="Jessica Burrow's email address, click to send an email"
             >
                 <span>
-                    <h1><MailSvg class="icon" /> Email Address:</h1>
+                    <h1>Email Address:</h1>
                     jess_burrow1@yahoo.co.uk
                 </span>
             </a>
         </li>
-        <!-- Linkedin -->
         <li>
             <span aria-label="Jessica Burrow's location">
-                <h1><LinkedInSvg class="icon mb-4" /> Location:</h1>
+                <h1>Location:</h1>
                 Manchester, England
             </span>
         </li>
@@ -45,14 +44,10 @@ export default {
 </script>
 <style scoped>
 li {
-    @apply mr-24 my-4;
+    @apply md:mr-24 my-4;
 }
 a,
 li {
-    @apply flex items-start text-[1.25rem] xs:text-[1.5rem];
-}
-
-.icon {
-    @apply h-16 w-16 pr-4;
+    @apply text-center md:flex md:items-start text-[1.25rem] xs:text-[1.5rem];
 }
 </style>

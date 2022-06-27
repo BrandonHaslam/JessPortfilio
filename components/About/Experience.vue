@@ -3,7 +3,6 @@
         <HeadingListItemSlot>Experience</HeadingListItemSlot>
         <div class="md:flex relative">
             <section class="hidden md:block md:basis-1/2">
-                <!-- This is fucked on mobile -->
                 <Laptop class="sm:scale-80 m-auto sm:sticky sm:top-0" />
             </section>
             <section class="md:basis-1/2">

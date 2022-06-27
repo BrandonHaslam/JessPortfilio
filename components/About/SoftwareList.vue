@@ -63,12 +63,12 @@ export default {
     background: linear-gradient(282.06deg, #050020 0%, #34005c 100.63%);
     border-radius: 50px;
     margin: 0 -5vw 4rem;
-    padding: 5rem;
+    padding: 5rem 5rem 8rem;
 }
 @media (min-width: 640px) {
     .software-list {
         margin: 0 -5rem 4rem;
-        border-radius: 100px;
+        border-radius: 122px;
     }
 }
 </style>

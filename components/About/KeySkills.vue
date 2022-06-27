@@ -24,10 +24,10 @@ export default {
     data: () => ({
         cards: [
             {
-                title: "App Design",
+                title: "Digital Design",
                 description:
-                    "By first defiing a clear user journey, encompassing both UI and UX, I create engaging and interactive applications.",
-                icon: "AppDesign",
+                    "Bridging the gap between form and function, I use modern techniques and sollutions to bring ideas to life.",
+                icon: "DigitalDesign",
             },
             {
                 title: "Branding",
@@ -36,16 +36,16 @@ export default {
                 icon: "Branding",
             },
             {
-                title: "Digital Design",
-                description:
-                    "Bridging the gap between form and function, I use modern techniques and sollutions to bring ideas to life.",
-                icon: "DigitalDesign",
-            },
-            {
                 title: "Web Design",
                 description:
                     "I design innovative, accessible and attractive websites to ensure your business stands out in the growing market. ",
                 icon: "WebDesign",
+            },
+            {
+                title: "App Design",
+                description:
+                    "By first defiing a clear user journey, encompassing both UI and UX, I create engaging and interactive applications.",
+                icon: "AppDesign",
             },
         ],
     }),
