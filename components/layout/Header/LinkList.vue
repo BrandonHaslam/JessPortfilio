@@ -48,7 +48,7 @@
             </li>
             <li>
                 <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/in/jessica-burrow-6798aa1b8/"
                     class="sm:flex sm:items-center h-16 text-primary hidden"
                 >
                     <LinkedInSvg class="h-16" alt="go to linkedin" />

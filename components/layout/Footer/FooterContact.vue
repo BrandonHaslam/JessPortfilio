@@ -7,7 +7,7 @@
                 aria-label="Jessica Burrow's Phone number, click to call"
             >
                 <span>
-                    <h1>Phone Number:</h1>
+                    <h3>Phone Number:</h3>
                     078 5252 0444
                 </span>
             </a>
@@ -19,14 +19,14 @@
                 aria-label="Jessica Burrow's email address, click to send an email"
             >
                 <span>
-                    <h1>Email Address:</h1>
+                    <h3>Email Address:</h3>
                     jess_burrow1@yahoo.co.uk
                 </span>
             </a>
         </li>
         <li>
             <span aria-label="Jessica Burrow's location">
-                <h1>Location:</h1>
+                <h3>Location:</h3>
                 Manchester, England
             </span>
         </li>
@@ -48,6 +48,10 @@ li {
 }
 a,
 li {
-    @apply text-center md:flex md:items-start text-[1.25rem] xs:text-[1.5rem];
+    @apply text-center md:text-left md:flex md:items-start text-[1.25rem] xs:text-[1.5rem];
+}
+h3 {
+    font-weight: 700;
+    @apply text-[1.5rem] xs:text-[1.75rem];
 }
 </style>

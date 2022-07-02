@@ -14,6 +14,9 @@
             </div>
         </section>
         <PortfolioProjectList :projects="currentProjects" />
+        <div class="w-full flex justify-center mb-24">
+            <div class="line" />
+        </div>
     </main>
 </template>
  
@@ -71,10 +74,16 @@ export default {
     },
 };
 </script>
-<style lang="postcss" scoped>
+<style  scoped>
 .section-colour {
     background: linear-gradient(265deg, #050020 0%, #34005c 100.63%);
     border-radius: 0px 0px 122px 122px;
-    @apply w-full min-h-[40vh];
+    @apply w-full min-h-[30vh];
+}
+.line {
+    width: 15vw;
+    height: 1rem;
+    background: rgba(26, 19, 62, 1);
+    border-radius: 10px;
 }
 </style>

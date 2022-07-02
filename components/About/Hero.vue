@@ -12,7 +12,7 @@
             >
                 Nice To Meet You!
             </h1>
-            <p class="text-[1.8rem] sm:w-[60ch] my-8">
+            <p class="text-[1.6rem] sm:text-[1.8rem] sm:w-[60ch] my-8">
                 I'm Jess, an adept and energetic Digital Designer dedicated to
                 providing and maintaining accessible, attractive and responsive
                 visual design.
@@ -31,7 +31,7 @@
                 <NuxtLink class="button" to="/about">Download CV</NuxtLink>
             </div>
         </section>
-        <section>
+        <section class="scale-75 sm:scale-100">
             <img
                 class="!block"
                 :src="require(`~/assets/images/about2.jpg`)"
