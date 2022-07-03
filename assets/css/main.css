@@ -28,6 +28,7 @@
   border-radius: 0% 45px 0% 45px;
   transition: all 500ms;
   font-weight: 600;
+  white-space: nowrap;
   @apply my-4 sm:mx-8 text-[1.5rem] 3xl:text-[2rem];
 }
 .button {

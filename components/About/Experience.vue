@@ -2,8 +2,9 @@
     <div>
         <HeadingListItemSlot>Experience</HeadingListItemSlot>
         <div class="md:flex relative">
-            <section class="hidden md:block md:basis-1/2">
-                <Laptop class="sm:scale-80 m-auto sm:sticky sm:top-0" />
+            <section class="md:basis-1/2">
+                <!-- <Laptop  /> -->
+                <img class="sm:scale-80 m-auto sm:sticky sm:top-20  sm:w-1/2" :src="require('~/assets/images/About/ExperienceImage.png')" alt="">
             </section>
             <section class="md:basis-1/2">
                 <div>
@@ -72,7 +73,7 @@ export default {
     components: {
         HeadingListItemSlot: () =>
             import("~/components/Slots/HeadingListItemSlot.vue"),
-        Laptop: () => import("@/assets/images/About/Laptop.svg"),
+        // Laptop: () => import("@/assets/images/About/Laptop.svg"),
     },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
-    <section class="flex mb-32 flex-col md:flex-row md:flex-row-reverse">
+    <section class="flex mb-32 flex-col md:flex-row-reverse mt-12">
         <ContactSideIcons />
-        <ContactForm />
+        <ContactForm class="mt-12 sm:mt-0" />
     </section>
 </template>
 <script>

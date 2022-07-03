@@ -1,7 +1,7 @@
 <template>
     <NuxtLink
         :to="`/portfolio/${project.directory}`"
-        class="text-left text-[#3D307B]"
+        class="text-left sm:text-[#3D307B] hover:text-white duration-700"
     >
         <div
             class="
@@ -47,7 +47,7 @@
                 />
             </div>
         </div>
-        <div class="px-16 sm:px-24 w-full mb-20">
+        <div class="card-text px-16 sm:px-24 w-full mb-20">
             <h2 class="text-[2.4rem] mt-4">
                 {{ project.title }}
             </h2>
@@ -88,16 +88,19 @@ export default {
 <style scoped>
 .card {
     opacity: 0.7;
-    transition: all 0.75s;
+    transition: all 0.7s;
     z-index: 10;
 }
 .card:hover {
-    transition: all 0.75s;
+    transition: all 0.7s;
     opacity: 1;
+}
+.card:hover .card-text {
+    color: white !important;
 }
 .card:hover:before {
     transform: scale(1.05) rotate(0deg);
-    transition: all 0.75s;
+    transition: all 0.7s;
     opacity: 1;
     @apply border-[#C275FF];
 }
