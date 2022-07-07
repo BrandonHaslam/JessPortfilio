@@ -7,7 +7,7 @@
             md:my-8
             basis-4/5
             sm:basis-2/5
-            lg:basis-1/4
+            lg:basis-[30%]
             relative
             flex flex-col
             justify-between
@@ -21,7 +21,7 @@
             <h3 :style="{ color: cardTitleStyle }">
                 {{ data.title }}
             </h3>
-            <p class="text-[1.8rem] p-4">{{ data.description }}</p>
+            <p class="text-base lg:text-[1.8rem] p-4">{{ data.description }}</p>
         </section>
         <div
             class="h-4 w-4 rounded-full mx-auto mt-4"

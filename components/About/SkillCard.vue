@@ -44,8 +44,8 @@ export default {
             my-8
             md:my-8
             basis-4/5
-            sm:basis-2/5
-            lg:basis-1/5;
+            sm:basis-[35%]
+            xl:!basis-1/5;
 }
 .skillcard:hover {
     border: 1px solid #c275ff;

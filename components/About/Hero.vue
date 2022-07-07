@@ -12,7 +12,7 @@
             >
                 Nice To Meet You!
             </h1>
-            <p class="text-[1.6rem] sm:text-[1.8rem] sm:w-[60ch] my-8">
+            <p class="text-base lg:text-[1.8rem] sm:w-[60ch] my-8">
                 I'm Jess, an adept and energetic Digital Designer dedicated to
                 providing and maintaining accessible, attractive and responsive
                 visual design.

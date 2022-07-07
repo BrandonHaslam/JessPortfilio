@@ -6,7 +6,7 @@
                 <p
                     v-for="(paragraph, index) in solution.text"
                     :key="`Paragraph ${index}`"
-                    class="py-4 text-[1.8rem]"
+                    class="py-4 text-base lg:text-[1.8rem]"
                 >
                     {{ paragraph }}
                 </p>

@@ -40,10 +40,10 @@
             >
             <NuxtLink class="button" to="/about">Read About Me</NuxtLink>
         </div>
-        <div class="blob" />
-        <div class="blob-2" />
-        <div class="blob-3" />
-        <div class="blob-4" />
+        <!-- <div class="blob" />
+        <div class="blob-2" /> -->
+        <!-- <div class="blob-3" />
+        <div class="blob-4" /> -->
     </main>
 </template>
  
@@ -95,7 +95,7 @@ export default {
                 // this.index === this.words.length
                 //     ? (this.index = 0)
                 //     : this.index++;
-            }, 2000);
+            }, 1500);
         },
     },
     mounted() {
@@ -108,8 +108,8 @@ export default {
     .blob {
         animation: shimmy 4s infinite;
         animation-direction: alternate;
-        height: 75vh;
-        width: 75vh;
+        height: 75vw;
+        width: 75vw;
         border-radius: 100%;
         position: absolute;
         top: 15%;
@@ -122,11 +122,11 @@ export default {
     .blob-2 {
         animation: shimmy-2 5s infinite;
         animation-direction: alternate;
-        height: 50vh;
-        width: 50vh;
+        height: 50vw;
+        width: 50vw;
         border-radius: 100%;
         position: absolute;
-        top: 15%;
+        top: 85%;
         left: 85%;
         /* background: linear-gradient(270deg, #c172ff 0%, #8d34fe 100%); */
         opacity: 0.15;
@@ -171,7 +171,7 @@ export default {
 }
 .animated {
     display: inline-block;
-    animation: currentWord 2s infinite;
+    animation: currentWord 1.5s infinite;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -199,7 +199,7 @@ export default {
         transform: translate(0, 0);
     }
     100% {
-        transform: translate(-100%, 0);
+        transform: translate(-100%, -100%);
     }
 }
 @keyframes shimmy-3 {

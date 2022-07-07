@@ -1,23 +1,22 @@
 <template>
-    <div class="w-4/5 sm:w-3/5 md:w-11/12 lg:w-3/4 mx-4 md:my-8 z-10">
+    <div class="w-4/5 sm:w-3/5 md:w-11/12 lg:w-3/5 mx-4 md:my-8 z-10">
         <component
             :is="link ? 'a' : 'div'"
             class="card"
             :href="link"
             :aria-label="adaLabel"
         >
-            <div class="flex items-center">
-                <component :is="icon" class="icon inline" />
-                <div class="ml-4">
-                    <h4>{{ heading }}</h4>
-                    <span>{{ text }}</span>
-                </div>
+            <component :is="icon" class="icon inline mb-2" />
+            <div>
+                <h4>{{ heading }}</h4>
+                <span>{{ text }}</span>
             </div>
         </component>
     </div>
 </template>
 <script>
 export default {
+    name: "ContactIconCard",
     components: {
         PhoneSvg: () => import("@/assets/images/Phone.svg"),
         MailSvg: () => import("@/assets/images/Mail.svg"),
@@ -48,7 +47,7 @@ export default {
 </script>
 <style scoped>
 h4 {
-    @apply text-[2rem] font-medium;
+    @apply text-[1.8rem] font-medium;
 }
 .icon {
     @apply text-primary h-12 w-12 lg:h-16 lg:w-16;

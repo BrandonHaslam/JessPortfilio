@@ -91,7 +91,7 @@ h3 span {
     line-height: 95%;
 }
 p {
-    font-size: 18px;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 ul {

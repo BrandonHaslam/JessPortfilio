@@ -28,14 +28,14 @@
             :style="{ backgroundImage: createBackgroundString }"
         >
             <div class="p-layout !z-10 lg:flex lg:items-center">
-                <div class="lg:w-4/5 xl:w-3/5 text-center sm:text-left">
+                <div class="lg:w-3/5 text-center sm:text-left">
                     <h1 class="font-bold text-[32px] sm:text-[64px] mb-12">
                         {{ hero.title }}
                     </h1>
                     <p
                         v-for="(paragraph, index) in hero.description"
                         :key="'paragraph ' + index"
-                        class="text-base md:text-[18px] mb-8"
+                        class="text-base lg:text-1.8rem mb-8"
                     >
                         {{ paragraph }}
                     </p>
@@ -55,7 +55,7 @@
                         py-10
                         pr-60
                         rounded-l-full
-                        text-[1.8rem]
+                        text-base
                         font-bold
                     "
                     :href="hero.figma.desktopLink"
@@ -70,7 +70,7 @@
                         py-10
                         px-20
                         rounded-full
-                        text-[1.8rem]
+                        text-base
                         font-bold
                         flex
                         justify-center

@@ -23,7 +23,7 @@
         <ContactIconCard
             icon="MailSvg"
             link="mailto:jess_burrow1@yahoo.co.uk"
-            heading="Email"
+            heading="Email Address"
             text="jess_burrow1@yahoo.co.uk"
             ada-label="Jessica Burrow's email address, click to send an email"
         />
