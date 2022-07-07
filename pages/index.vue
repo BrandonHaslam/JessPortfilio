@@ -165,9 +165,9 @@ export default {
 .container {
     display: inline-block;
     width: 6ch;
-    height: 2ch;
     overflow: hidden;
     transform: translateY(25%);
+    @apply h-[1.5ch] sm:h-[2ch];
 }
 .animated {
     display: inline-block;
