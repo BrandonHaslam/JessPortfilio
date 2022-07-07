@@ -4,7 +4,16 @@
             class="section-colour flex justify-center items-center text-center"
         >
             <div class="overflow-hidden">
-                <h1 class="text-[3rem] sm:text-[7.5rem] mt-12 font-bold">
+                <h1
+                    class="
+                        text-[3.5rem]
+                        sm:text-[5.5rem]
+                        md:text-[6.5rem]
+                        lg:text-[7.5rem]
+                        mt-20
+                        font-bold
+                    "
+                >
                     Portfolio
                 </h1>
                 <PortfolioProjectButtonList

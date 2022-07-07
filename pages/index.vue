@@ -24,7 +24,7 @@
                 >Welcome to my portfolio</span
             >
             <br />
-            Im A
+            I'm a
             <span class="container">
                 <span
                     class="animated"

@@ -1,7 +1,7 @@
 <template>
     <NuxtLink
         :to="`/portfolio/${project.directory}`"
-        class="text-left sm:text-[#3D307B] hover:text-white duration-700"
+        class="container text-left duration-700"
     >
         <div
             class="
@@ -47,13 +47,23 @@
                 />
             </div>
         </div>
-        <div class="card-text px-16 sm:px-24 w-full mb-20">
-            <h2 class="text-[2.4rem] mt-4">
+        <div class="px-24 w-full mb-20 md:text-[#3D307B]">
+            <h2 class="text-[2rem] md:text-[2.4rem] mt-4">
                 {{ project.title }}
             </h2>
-            <span class="text-[2rem] flex items-baseline">
+            <span
+                class="
+                    card-text
+                    text-[#c275ff]
+                    md:text-[#3D307B]
+                    text-base
+                    md:text-[2rem]
+                    flex
+                    items-baseline
+                "
+            >
                 {{ project.category }}
-                <Arrow class="ml-auto" />
+                <Arrow class="ml-auto arrow" />
             </span>
         </div>
     </NuxtLink>
@@ -87,7 +97,7 @@ export default {
 </script>
 <style scoped>
 .card {
-    opacity: 0.7;
+    @apply md:opacity-70;
     transition: all 0.7s;
     z-index: 10;
 }
@@ -95,8 +105,13 @@ export default {
     transition: all 0.7s;
     opacity: 1;
 }
-.card:hover .card-text {
-    color: white !important;
+.container:hover .card-text {
+    color: #c275ff !important;
+    transition: all 0.7s;
+}
+.container:hover h2 {
+    color: white;
+    transition: all 0.7s;
 }
 .card:hover:before {
     transform: scale(1.05) rotate(0deg);

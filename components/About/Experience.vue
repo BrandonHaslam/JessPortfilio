@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mb-8">
         <HeadingListItemSlot>Experience</HeadingListItemSlot>
         <div class="md:flex relative">
             <section class="md:basis-1/2">

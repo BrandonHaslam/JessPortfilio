@@ -1,7 +1,7 @@
 <template>
     <form
         class="w-full md:w-3/5 flex flex-col text-base font-normal"
-        name="contact"
+        :name="name"
         method="POST"
         data-netlify="true"
     >
