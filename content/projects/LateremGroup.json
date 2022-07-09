@@ -3,7 +3,7 @@
   "directory": "LateremGroup",
   "category": "Web Design",
   "styles": {
-    "colorDarkest": "rgb(5,0,32)",
+    "colorDarkest": "rgba(1,0,35,1)",
     "colorDark": "rgba(23,22,79,1)",
     "colorLight": "rgb(112,152,255)",
     "colorLightest": "rgb(50,124,220)",

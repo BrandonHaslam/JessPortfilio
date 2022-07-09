@@ -3,10 +3,10 @@
   "directory": "LateremGroup2",
   "category": "No",
   "styles": {
-    "colorDarkest": "rgba(1,0,35,1)",
-    "colorDark": "rgba(23,22,79,1)",
-    "colorLight": "rgb(112,152,255)",
-    "colorLightest": "rgb(50,124,220)",
+    "colorDarkest": "red",
+    "colorDark": "green",
+    "colorLight": "blue",
+    "colorLightest": "pink",
     "text": "white"
   },
   "card": {

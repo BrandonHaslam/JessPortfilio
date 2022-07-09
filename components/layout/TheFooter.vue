@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer :style="{ backgroundColor: footerColour }">
         <section
             class="
                 flex
@@ -32,6 +32,14 @@ export default {
         FooterContact: () => import("./Footer/FooterContact"),
         // FooterLinks: () => import("./Footer/FooterLinks"),
         MainLogo: () => import("@/assets/images/NewLogo.svg"),
+    },
+    computed: {
+        footerColour() {
+            if (this.$route.params.project) {
+                return this.$store.state.projectStyles.colorDark;
+            }
+            return "#1a133e";
+        },
     },
 };
 </script>

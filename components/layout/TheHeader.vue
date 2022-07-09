@@ -14,7 +14,7 @@
             top-0
             sm:rounded-bl-full
         "
-        :class="{ '!bg-[rgba(9,3,44,0.95)]': scrolled }"
+        :style="{ backgroundColor: scrolled ? colours : '' }"
     >
         <section class="mr-auto z-50 flex items-start w-full">
             <NuxtLink to="/" aria-label="Link to Homepage">
@@ -71,7 +71,18 @@ export default {
     data: () => ({
         mobileNavOpen: false,
         scrolled: false,
+        colours: "rgba(9,3,44,0.95)",
     }),
+    watch: {
+        $route() {
+            this.checkColours();
+        },
+    },
+    computed: {
+        headerBackground() {
+            return this.scrolled ? this.colours : "";
+        },
+    },
     methods: {
         NavbarToggle() {
             this.mobileNavOpen = !this.mobileNavOpen;
@@ -88,8 +99,15 @@ export default {
                 ? (this.scrolled = true)
                 : (this.scrolled = false);
         },
+        checkColours() {
+            if (this.$route?.params?.project) {
+                console.log("project");
+                this.colours = `${this.$store.state.projectStyles.colorDarkest}`;
+            }
+        },
     },
     mounted() {
+        this.checkColours();
         window.addEventListener("scroll", this.changeCss, false);
     },
 };

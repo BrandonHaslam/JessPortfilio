@@ -1,5 +1,7 @@
 <template>
-    <main>
+    <main
+        :style="`backgroundColor: ${this.$store.state.projectStyles.colorDarkest}`"
+    >
         <Hero :hero="page.content.hero" :directory="page.directory" />
         <DevicePreview />
         <Details :details="page.content.projectDetails" :styles="page.styles" />
@@ -47,9 +49,6 @@ export default {
 };
 </script>
 <style scoped>
-body {
-    background: rgb(5, 0, 32);
-}
 h1 {
     font-size: 40px;
 }

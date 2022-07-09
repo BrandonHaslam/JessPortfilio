@@ -33,23 +33,27 @@
                 >
             </li>
             <li>
-                <span class="headerSegregate text-[24px] px-8 hidden sm:block"
+                <span
+                    :style="colours"
+                    class="colours text-[24px] px-8 hidden sm:block"
                     >|</span
                 >
             </li>
             <!-- External -->
             <li>
                 <NuxtLink
-                    class="headerSegregate navLink__animation"
+                    :style="colours"
+                    class="navLink__animation"
                     to="/contact"
                     @click.native="$emit('closeNav')"
-                    >Contact</NuxtLink
+                    >Contact Me</NuxtLink
                 >
             </li>
             <li>
                 <a
+                    :style="colours"
                     href="https://www.linkedin.com/in/jessica-burrow-6798aa1b8/"
-                    class="sm:flex sm:items-center h-16 text-primary hidden"
+                    class="sm:flex sm:items-center h-16 hidden"
                 >
                     <LinkedInSvg class="h-16" alt="go to linkedin" />
                 </a>
@@ -63,6 +67,25 @@ export default {
     components: {
         LinkedInSvg: () => import("@/assets/images/linkedin.svg"),
     },
+    data: () => ({
+        colours: "color:#c275ff",
+    }),
+    watch: {
+        $route() {
+            this.checkColours();
+        },
+    },
+    mounted() {
+        this.checkColours();
+    },
+    methods: {
+        checkColours() {
+            if (this.$route?.params?.project) {
+                console.log("project");
+                this.colours = `color:${this.$store.state.projectStyles.colorLight}`;
+            }
+        },
+    },
 };
 // accessibility
 </script>
@@ -71,11 +94,9 @@ a {
     @apply sm:px-8 relative;
     letter-spacing: 0.5px;
 }
-.headerSegregate {
-    color: #c275ff;
-}
+
 li {
-    @apply my-4 sm:m-0 sm:flex;
+    @apply my-4 sm:m-0 sm:flex whitespace-nowrap;
 }
 @media screen and (min-width: 768px) {
     .navLink__animation::before {

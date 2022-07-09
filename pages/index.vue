@@ -95,7 +95,7 @@ export default {
                 // this.index === this.words.length
                 //     ? (this.index = 0)
                 //     : this.index++;
-            }, 1500);
+            }, 2000);
         },
     },
     mounted() {
@@ -167,11 +167,11 @@ export default {
     width: 6ch;
     overflow: hidden;
     transform: translateY(25%);
-    @apply h-[1.5ch] sm:h-[2ch];
+    @apply h-[2ch];
 }
 .animated {
     display: inline-block;
-    animation: currentWord 1.5s infinite;
+    animation: currentWord 2s infinite;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
