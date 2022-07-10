@@ -1,0 +1,81 @@
+{
+  "title": "Pinnacle Lifestyle Coaching",
+  "directory": "Pinnacle",
+  "category": "Application",
+  "styles": {
+    "colorDarkest": "rgba(16,16,16,1)",
+    "colorDark": "rgba(60,60,60,1)",
+    "colorLight": "rgb(216,170,77,1)",
+    "colorLightest": "rgb(229,203,137,1)",
+    "text": "white"
+  },
+  "card": {
+    "foreground": "PinnacleImage.png",
+    "background": "PinnacleBackground.jpg"
+  },
+  "content": {
+    "hero": {
+      "title": "Pinnacle Lifestyle Coaching",
+      "description": [
+        "Pinnacle is the world’s first fly-in lifestyle coaching services, offering exceptional coaching within personal, lifestyle and mindset training. With the ambition to take Pinnacle services worldwide, United Arab Emirates will be their first landing point.",
+        "The ambitious task to create an online system for both the client and trainer to use throughout their Pinnacle journey had to be able to reach out to a global market, to be recognised as a one of a kind luxury service."
+      ],
+      "figma": {
+        "desktopLink": "https://www.figma.com/proto/xzT5mrv0bOKF0Hjk7eMtky/Pinnacle-Lifestyle-Coaching?page-id=0%3A1&node-id=1%3A51&viewport=660%2C74%2C0.08&scaling=min-zoom&starting-point-node-id=1%3A1979",
+        "mobileLink": "https://www.figma.com/proto/xzT5mrv0bOKF0Hjk7eMtky/Pinnacle-Lifestyle-Coaching?page-id=1%3A8281&node-id=1%3A9489&viewport=2765%2C1624%2C0.32&scaling=scale-down&starting-point-node-id=1%3A9563"
+      },
+      "background": {
+        "image": {
+          "mobile": "PinnacleMobHero.jpg",
+          "desktop": "PinnacleHero.jpg",
+          "alt": "Pinnacle Header Image"
+        },
+        "colorOne": "rgba(16, 16, 16, 0.5)",
+        "colorTwo": "rgba(16, 16, 16, 1)"
+      }
+    },
+    "preview": {
+      "mobile": "PinnacleMobile.jpg",
+      "desktop": "PinnacleDesktop.png"
+    },
+    "projectDetails": [
+      {
+        "title": "Brochure Site",
+        "description": "The aim of the brochure site is to educate and intrigue potential clients to enquire about Pinnacles exceptional services. "
+      },
+      {
+        "title": "Client Portal",
+        "description": "I created a web app for the client to track their Pinnacle progress. This was designed to keep interactions as minimal as possible for ease of navigation and interpretation."
+      },
+      {
+        "title": "Master CRM",
+        "description": "I built a clean and organised system for the trainer to create bespoke plans and communicate with individuals, and to also keep up to date with client information."
+      }
+    ],
+    "solution": {
+      "image": {
+        "mobile": "PinnacleSollutions.png",
+        "desktop": "PinnacleSollutionsImage.png"
+      },
+      "alt": "Pinnacle Website on mobile",
+      "text": [
+        "Mobile optimisation was a priority for me as the nature of the system was for quick and easy access to updating and maintaining training programmes. To view and understand information with ease, progress meters, valuable resources and plan assets are usable to the user through minimal clicks, available in light and dark mode.",
+        "Pinnacle now has a well equipped system for the client and trainer to communicate and organise their Pinnacle journey together. Individuals looking to transform themselves have an experience complete with accessibility and ease of use on an international level."
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "PinnacleCentreImage.png",
+        "mobile": "PinnacleCentre.png"
+      },
+      {
+        "desktop": "PinnacleSecondImage.png",
+        "mobile": "PinnacleSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "PinnacleProject.png",
+      "Mobile": "PinnacleProjectDetails.png"
+    }
+  }
+}

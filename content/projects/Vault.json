@@ -1,0 +1,80 @@
+{
+  "title": "Vault",
+  "directory": "Vault",
+  "category": "Application",
+  "styles": {
+    "colorDarkest": "rgba(29,35,43,1)",
+    "colorDark": "rgba(46,52,59,1)",
+    "colorLight": "rgb(200,220,30,1)",
+    "colorLightest": "rgb(239,254,116,1)",
+    "text": "white"
+  },
+  "card": {
+    "foreground": "VaultImage.png",
+    "background": "VaultBackground.png"
+  },
+  "content": {
+    "hero": {
+      "title": "Vault",
+      "description": [
+        "Vault is a new marketplace app here to bring a convenient and attractive way of introducing sustainable fashion to a global audience. Their goal is to banish the stigma around selling and purchasing second hand clothing with a  minimal and easy to use platform."
+      ],
+      "figma": {
+        "desktopLink": "",
+        "mobileLink": ""
+      },
+      "background": {
+        "image": {
+          "mobile": "VaultHero.jpg",
+          "desktop": "VaultHeroImage.jpg",
+          "alt": "Vault Header Image"
+        },
+        "colorOne": "rgba(28, 35, 42, 0.5)",
+        "colorTwo": "rgba(28, 35, 42, 1)"
+      }
+    },
+    "preview": {
+      "mobile": "MmiDesktopImage.png",
+      "desktop": "MmiMobile.jpg"
+    },
+    "projectDetails": [
+      {
+        "title": "Market Research",
+        "description": "Although there are many other social e-commerce apps, I felt they all held an overwhelming amount of clutter and distractions between the checkout of an item. "
+      },
+      {
+        "title": "Wireframes",
+        "description": "Continuing from my research, I established a fluent way for the user to navigate through the app, with no unnecessary steps and add ons."
+      },
+      {
+        "title": "App Design",
+        "description": "I designed a simple and modern interface to compliment the usability of the app, which also allows each product to be clear and inviting."
+      }
+    ],
+    "solution": {
+      "image": {
+        "mobile": "VaultSollution.png",
+        "desktop": "VaultSollutionsImage.png"
+      },
+      "alt": "Vault Website on mobile",
+      "text": [
+        "Small yet effective features, such as selling and posting tips, have been implemented to help the user reach their full selling potential and to gain a positive experience of using Vault. The foolproof interface accompanied with the minimal branding determines a timeless product.",
+        "Vault now have a platform with the potential to grow and influence a worldwide community to make sustainable fashion choices. "
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "VaultCentreImage.png",
+        "mobile": "VaultCentre.png"
+      },
+      {
+        "desktop": "VaultSecondImage.png",
+        "mobile": "VaultSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "VaultProjectDetails.png",
+      "Mobile": "VaultProject.png"
+    }
+  }
+}

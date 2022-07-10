@@ -1,0 +1,82 @@
+{
+  "title": "Me, Myself & I",
+  "directory": "MMI",
+  "category": "Website",
+  "styles": {
+    "colorDarkest": "rgba(28,0,12,1)",
+    "colorDark": "rgba(91,23,52,1)",
+    "colorLight": "rgb(221,141,160,1)",
+    "colorLightest": "rgb(243,180,195,1)",
+    "text": "white"
+  },
+  "card": {
+    "foreground": "MmiImage.png",
+    "background": "MmiBackground.png"
+  },
+  "content": {
+    "hero": {
+      "title": "Me, Myself & I",
+      "description": [
+        "MM&I are an online fashion retailer selling clothes aimed at 16-35 years old women. They are here to make a statement and challenge the leading fast fashion retailers based in the UK.",
+        "As they were coming to the market as a new brand, they needed to challenge competitors with bold branding and an engaging and responsive shopify store."
+      ],
+      "figma": {
+        "desktopLink": "https://www.figma.com/proto/VPMIBbeS8moDdbCj26UCVG/Me%2C-Myself-%26-I?page-id=0%3A1&node-id=1%3A25&viewport=648%2C705%2C0.06&scaling=min-zoom&starting-point-node-id=1%3A25",
+        "mobileLink": "https://www.figma.com/proto/VPMIBbeS8moDdbCj26UCVG/Me%2C-Myself-%26-I?page-id=1%3A10175&node-id=1%3A10318&viewport=6289%2C1894%2C1.01&scaling=scale-down&starting-point-node-id=1%3A10318"
+      },
+      "background": {
+        "image": {
+          "mobile": "MmiHero.jpg",
+          "desktop": "MmiHero.jpg",
+          "alt": "Mmi Header Image"
+        },
+        "colorOne": "rgba(28, 0, 12, 0.5)",
+        "colorTwo": "rgba(28, 0, 12, 1)"
+      }
+    },
+    "preview": {
+      "mobile": "MmiDesktopImage.png",
+      "desktop": "MmiMobile.jpg"
+    },
+    "projectDetails": [
+      {
+        "title": "Branding",
+        "description": "I designed MM&I’s branding to be bold and youthful to compete with leading fast fashion brands. I used 3 different fonts within the logo to represent ‘Me’, ‘Myself’ and ‘I’."
+      },
+      {
+        "title": "User Flow & Wireframes",
+        "description": "I completed market research to understand the user experience of successful fast fashion. I translated this into a user flow which was the foundation of the wireframes."
+      },
+      {
+        "title": "Shopify Store",
+        "description": "It was important to the client to have a customised e-commerce store. I did this by implementing and reconstructing shopify’s themes and guidelines."
+      }
+    ],
+    "solution": {
+      "image": {
+        "mobile": "MmiSollutions.png",
+        "desktop": "MmiSollutionsImage.png"
+      },
+      "alt": "Mmi Website on mobile",
+      "text": [
+        "To not get lost in the market, I designed MM&I’s store to be eye-catching, foolproof, and accessible.",
+        "The goal is always the checkout! To get customers to the purchasing point quick and successfully, I structured a 4 click path: ‘view collection’ > ‘view product’ > ‘add to basket’ > ‘checkout’.",
+        "By following e-commerce principles, MM&I now have a fully optimisable online store to out-stand competitors."
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "MmiCentreImage.png",
+        "mobile": "MmiCentre.png"
+      },
+      {
+        "desktop": "MmiSecondImage.png",
+        "mobile": "MmiSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "MmiProjectDetails.png",
+      "Mobile": "MmiProject.png"
+    }
+  }
+}

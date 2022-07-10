@@ -81,7 +81,6 @@ export default {
     methods: {
         checkColours() {
             if (this.$route?.params?.project) {
-                console.log("project");
                 this.colours = `color:${this.$store.state.projectStyles.colorLight}`;
             }
         },

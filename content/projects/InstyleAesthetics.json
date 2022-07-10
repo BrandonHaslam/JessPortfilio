@@ -1,0 +1,81 @@
+{
+  "title": "InStyle Aesthetics",
+  "directory": "InstyleAesthetics",
+  "category": "Website",
+  "styles": {
+    "colorDarkest": "rgba(28,4,43,1)",
+    "colorDark": "rgba(51,19,70,1)",
+    "colorLight": "rgb(189,175,225,1)",
+    "colorLightest": "rgb(218,209,242,1)",
+    "text": "white"
+  },
+  "card": {
+    "foreground": "InstyleImage.png",
+    "background": "InstyleBackground.png"
+  },
+  "content": {
+    "hero": {
+      "title": "Instyle Aesthetics",
+      "description": [
+        "InStyle Aesthetics is a UK leading provider of premium aesthetic treatment.",
+        "In need of a new brand identity and website redesign, InStyle were looking for something more refined to represent the brand ethos of enhancing natural beauty. "
+      ],
+      "figma": {
+        "desktopLink": "https://www.figma.com/proto/k2ZVSOD61ns0JSJeKch7G1/Instyle?page-id=0%3A1&node-id=2%3A44&viewport=3312%2C3646%2C0.58&scaling=min-zoom&starting-point-node-id=2%3A637",
+        "mobileLink": "https://www.figma.com/proto/k2ZVSOD61ns0JSJeKch7G1/Instyle?page-id=2%3A3224&node-id=2%3A3228&viewport=584%2C3678%2C0.39&scaling=scale-down&starting-point-node-id=2%3A3228"
+      },
+      "background": {
+        "image": {
+          "mobile": "InstyleMobHero.jpg",
+          "desktop": "InstyleHero.jpg",
+          "alt": "Instyle Header Image"
+        },
+        "colorOne": "rgba(28, 4, 43, 0.5)",
+        "colorTwo": "rgba(28, 4, 43, 1)"
+      }
+    },
+    "preview": {
+      "mobile": "InstyleMobileImage.jpg",
+      "desktop": "InstyleDesktopImage.jpg"
+    },
+    "projectDetails": [
+      {
+        "title": "Rebranding",
+        "description": "I chose a more organic colour scheme with a pop of lilac to accompany a cursive logo to represent the enhancement of natural beauty."
+      },
+      {
+        "title": "Wireframes",
+        "description": "I restructured content from the existing site to be more fluent in narration as before it was unclear of where to find relevant information."
+      },
+      {
+        "title": "Website Redesign",
+        "description": "The existing site was bland and difficult to navigate through. I designed a more trusting, user friendly experience for customers to browse."
+      }
+    ],
+    "solution": {
+      "image": {
+        "mobile": "InstyleSollution.png",
+        "desktop": "InstyleSollutionsImage.png"
+      },
+      "alt": "Instyle Website on mobile",
+      "text": [
+        "By updating InStyle’s logo and colour palette to feel more organic, their branding now represents the treatments they offer in a more trusting and professional light. ",
+        "With the existing site lacking general user functionality and character, the redesign is a massive improvement for customer growth. I used a bright and modern scheme paired with attractive photography to relay expertise and trust in the business."
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "InstyleCentreImage.png",
+        "mobile": "InstyleCentre.png"
+      },
+      {
+        "desktop": "InstyleSecondImage.png",
+        "mobile": "InstyleSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "InstyleProjectDetails.png",
+      "Mobile": "InstyleProject.png"
+    }
+  }
+}
