@@ -30,7 +30,6 @@
 export default {
     components: {
         FooterContact: () => import("./Footer/FooterContact"),
-        // FooterLinks: () => import("./Footer/FooterLinks"),
         MainLogo: () => import("@/assets/images/NewLogo.svg"),
     },
     computed: {
@@ -46,6 +45,6 @@ export default {
 <style scoped>
 footer {
     background-color: #1a133e;
-    border-radius: 82px 82px 0px 0px;
+    /* border-radius: 82px 82px 0px 0px; */
 }
 </style>

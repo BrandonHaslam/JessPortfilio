@@ -67,26 +67,15 @@ export default {
     components: {
         LinkedInSvg: () => import("@/assets/images/linkedin.svg"),
     },
-    data: () => ({
-        colours: "color:#c275ff",
-    }),
-    watch: {
-        $route() {
-            this.checkColours();
-        },
-    },
-    mounted() {
-        this.checkColours();
-    },
-    methods: {
-        checkColours() {
-            if (this.$route?.params?.project) {
-                this.colours = `color:${this.$store.state.projectStyles.colorLight}`;
+    computed: {
+        colours() {
+            if (this.$route.params.project) {
+                return `color:${this.$store.state.projectStyles.colorLight}`;
             }
+            return "color:#c275ff";
         },
     },
 };
-// accessibility
 </script>
 <style  scoped>
 a {
