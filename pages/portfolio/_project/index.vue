@@ -3,7 +3,11 @@
         :style="`backgroundColor: ${this.$store.state.projectStyles.colorDarkest}`"
     >
         <Hero :hero="page.content.hero" :directory="page.directory" />
-        <DevicePreview />
+        <DevicePreview
+            v-if="page.content.preview"
+            :previewImages="page.content.preview"
+            :directory="page.directory"
+        />
         <Details :details="page.content.projectDetails" :styles="page.styles" />
         <DesktopScreenShots :screen-shots="page.content.screenShots[0]" />
         <Solution :solution="page.content.solution" />

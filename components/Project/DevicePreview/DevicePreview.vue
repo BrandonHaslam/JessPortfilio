@@ -1,7 +1,15 @@
 <template>
-    <div class="flex items-center flex-col">
-        <DesktopDevicePreview class="hidden sm:block" />
-        <MobileDevicePreview class="sm:hidden" />
+    <div v-if="previewImages" class="flex items-center flex-col">
+        <DesktopDevicePreview
+            v-if="previewImages.desktop"
+            :preview="previewImages.desktop"
+            class="hidden sm:block"
+        />
+        <MobileDevicePreview
+            v-if="previewImages.mobile"
+            :preview="previewImages.mobile"
+            class="sm:hidden"
+        />
     </div>
 </template>
 <script>
@@ -16,6 +24,16 @@ export default {
             import(
                 "@/components/Project/DevicePreview/MobileDevicePreview.vue"
             ),
+    },
+    props: {
+        previewImages: {
+            type: Object,
+            required: false,
+        },
+        directory: {
+            type: String,
+            required: true,
+        },
     },
 };
 </script>

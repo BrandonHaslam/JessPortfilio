@@ -10,7 +10,7 @@
             <img
                 class="w-full"
                 :src="
-                    require('~/assets/images/projects/LateremGroup/Mobile/LateremMobileImage.jpg')
+                    require(`~/assets/images/projects/${$route.params.project}/Mobile/${preview}`)
                 "
                 alt=""
                 srcset=""
@@ -18,9 +18,16 @@
         </div>
     </div>
 </template>
+
 <script>
 export default {
     name: "MobileDevicePreview",
+    props: {
+        preview: {
+            type: String,
+            required: false,
+        },
+    },
 };
 </script>
 <style scoped>

@@ -3,7 +3,7 @@
         <img
             class="w-full"
             :src="
-                require('~/assets/images/projects/LateremGroup/Desktop/LateremDesktopImage.png')
+                require(`~/assets/images/projects/${$route.params.project}/Desktop/${preview}`)
             "
             alt=""
             srcset=""
@@ -13,6 +13,12 @@
 <script>
 export default {
     name: "DesktopDevicePreview",
+    props: {
+        preview: {
+            type: String,
+            required: false,
+        },
+    },
 };
 </script>
 <style scoped>

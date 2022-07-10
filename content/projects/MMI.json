@@ -35,8 +35,8 @@
       }
     },
     "preview": {
-      "mobile": "MmiDesktopImage.png",
-      "desktop": "MmiMobile.jpg"
+      "mobile": "MmiMobile.jpg",
+      "desktop": "MmiDesktopImage.png"
     },
     "projectDetails": [
       {

@@ -33,10 +33,6 @@
         "colorTwo": "rgba(28, 35, 42, 1)"
       }
     },
-    "preview": {
-      "mobile": "MmiDesktopImage.png",
-      "desktop": "MmiMobile.jpg"
-    },
     "projectDetails": [
       {
         "title": "Market Research",
