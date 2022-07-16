@@ -86,20 +86,20 @@ a {
 li {
     @apply my-4 sm:m-0 sm:flex whitespace-nowrap;
 }
-
-.navLink__animation::before {
-    position: absolute;
-    top: 50%;
-    left: -5px;
-    opacity: 0;
-    color: white;
-    content: "●";
-    transition: all 300ms;
-}
-.navLink__animation:hover::before {
-    opacity: 100%;
-    top: 0%;
-    left: -5px;
-    transition: all 500ms;
+@media screen and (min-width: 768px) {
+    .navLink__animation::before {
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        color: rgba(255, 255, 255, 0);
+        content: "●";
+        transition: all 300ms;
+    }
+    .navLink__animation:hover::before {
+        color: rgb(255, 255, 255);
+        top: 0%;
+        left: -5px;
+        transition: all 500ms;
+    }
 }
 </style>
