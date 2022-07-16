@@ -13,7 +13,7 @@
         <Solution :solution="page.content.solution" />
         <MobileScreenShots :screen-shots="page.content.screenShots[1]" />
         <StyleSheet :stylesheet="page.content.components" />
-        <!-- <MoreProjects /> -->
+        <MoreProjects />
     </main>
 </template>
  
