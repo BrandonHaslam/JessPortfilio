@@ -86,14 +86,14 @@ a {
 li {
     @apply my-4 sm:m-0 sm:flex whitespace-nowrap;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .navLink__animation::before {
         position: absolute;
         top: 50%;
         left: -5px;
         opacity: 0;
         color: white;
-        content: "●";
+        content: "O";
         transition: all 300ms;
     }
     .navLink__animation:hover::before {
