@@ -12,7 +12,7 @@
                 :src="
                     require(`~/assets/images/projects/${$route.params.project}/Mobile/${preview}`)
                 "
-                alt=""
+                alt="Mobile preview of project"
                 srcset=""
             />
         </div>

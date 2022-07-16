@@ -3,12 +3,12 @@
         <DesktopDevicePreview
             v-if="previewImages.desktop"
             :preview="previewImages.desktop"
-            class="hidden sm:block"
+            class="hidden lg:block"
         />
         <MobileDevicePreview
             v-if="previewImages.mobile"
             :preview="previewImages.mobile"
-            class="sm:hidden"
+            class="lg:hidden"
         />
     </div>
 </template>

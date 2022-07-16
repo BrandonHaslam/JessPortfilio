@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="px-4 lg:px-12">
         <picture>
             <source
                 media="(max-width:799px)"

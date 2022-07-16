@@ -1,5 +1,5 @@
 <template>
-    <div :style="backgroundStyles">
+    <div :style="backgroundStyles" class="px-4 lg:px-12">
         <picture>
             <source
                 media="(max-width:799px)"

@@ -1,0 +1,11 @@
+To do:
+- Hamburger does not change colour on project page change.
+- Phone preview does not respect radius / overflow
+- Change Device Preview media query
+- Add device preview scroll icons
+- Add backgrounds to some project sections
+- CV Link on google drive
+- Contact form fix
+- Location Icon
+- Send Message Icon
+- Make macbook/iPad

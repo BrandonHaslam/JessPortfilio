@@ -1,5 +1,5 @@
 <template>
-    <div class="details">
+    <div class="px-4 lg:px-12">
         <h2 class="text-center mt-16 text-[4.2rem] font-bold">
             Project Details
         </h2>
@@ -34,9 +34,6 @@ export default {
             type: Object,
             required: true,
         },
-    },
-    mounted() {
-        // console.log("page", this.$route.meta.theme);
     },
 };
 </script>

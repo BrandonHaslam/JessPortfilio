@@ -3,14 +3,26 @@
         <div
             class="w-[1.5rem]"
             :class="{ 'top-animate': navigationOpenAnimation }"
+            :style="{
+                backgroundColor: hamburgerColour,
+                borderColor: hamburgerColour,
+            }"
         />
         <div
             class="w-[4.5rem]"
             :class="{ 'middle-animate': navigationOpenAnimation }"
+            :style="{
+                backgroundColor: hamburgerColour,
+                borderColor: hamburgerColour,
+            }"
         />
         <div
             class="w-[3rem] !mb-0"
             :class="{ 'bottom-animate': navigationOpenAnimation }"
+            :style="{
+                backgroundColor: hamburgerColour,
+                borderColor: hamburgerColour,
+            }"
         />
     </button>
 </template>
@@ -29,6 +41,12 @@ export default {
         navigationOpenAnimation() {
             return this.toggleButton ?? false;
         },
+        hamburgerColour() {
+            if (this.$route?.params?.project) {
+                return this.$store.state.projectStyles.colorLight;
+            }
+            return "#C275FF";
+        },
     },
     methods: {
         openNavigation() {
@@ -41,7 +59,7 @@ export default {
 
 <style lang="postcss" scoped>
 div {
-    @apply bg-[#C275FF] h-1 my-6 rounded transition-all duration-500 border border-[#C275FF];
+    @apply h-1 my-6 rounded transition-all duration-500 border;
 }
 .top-animate {
     @apply translate-x-[0.5rem] translate-y-[0.75rem] rotate-45;

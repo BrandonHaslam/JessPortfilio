@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:flex">
+    <div class="lg:flex px-4 lg:px-12">
         <section class="sm:basis-1/2 px-12 md:px-24 flex">
             <div class="m-auto">
                 <h2 class="text-[4.2rem] font-bold">The Solution</h2>

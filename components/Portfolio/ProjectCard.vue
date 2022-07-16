@@ -34,12 +34,7 @@
             >
                 <img
                     v-if="image"
-                    class="
-                        self-center
-                        rounded-3xl
-                        shadow-lg shadow-black
-                        !block
-                    "
+                    class="self-center rounded-3xl shadow-sm !block"
                     :src="
                         require(`~/assets/images/projects/${project.directory}/${project.card.foreground}`)
                     "
