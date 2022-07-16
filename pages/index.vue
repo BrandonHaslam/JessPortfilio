@@ -167,7 +167,7 @@ export default {
     width: 6ch;
     overflow: hidden;
     transform: translateY(25%);
-    @apply h-[2ch];
+    @apply sm:h-[2ch];
 }
 .animated {
     display: inline-block;
