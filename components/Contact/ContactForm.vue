@@ -1,7 +1,7 @@
 <template>
     <form
         class="w-full md:w-3/5 flex flex-col text-base font-normal"
-        name="name"
+        :name="name"
         method="POST"
         data-netlify="true"
     >
@@ -43,6 +43,12 @@ export default {
     name: "ContactForm",
     components: {
         MailSvg: () => import("@/assets/images/Mail.svg"),
+    },
+    props: {
+        name: {
+            type: String,
+            required: true,
+        },
     },
 };
 </script>

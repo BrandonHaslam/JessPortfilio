@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:flex px-4 lg:px-12">
+    <div class="lg:flex px-4 lg:px-24">
         <section class="sm:basis-1/2 px-12 md:px-24 flex">
             <div class="m-auto">
                 <h2 class="text-[4.2rem] font-bold">The Solution</h2>
@@ -27,7 +27,7 @@
                     "
                 />
                 <img
-                    class="w-full h-full object-cover"
+                    class="m-auto w-4/5 object-cover"
                     :src="
                         require(`~/assets/images/projects/${this.directory}/Desktop/${this.solution.image.desktop}`)
                     "

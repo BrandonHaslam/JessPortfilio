@@ -1,9 +1,9 @@
 <template>
-    <div class="px-4 lg:px-12">
+    <div class="px-4 lg:px-24">
         <h2 class="text-center mt-16 text-[4.2rem] font-bold">
             Project Details
         </h2>
-        <div class="details xs:flex flex-wrap justify-evenly mt-16">
+        <div class="details xs:flex flex-wrap justify-evenly mt-16 px-12">
             <DetailsCard
                 v-for="card in details"
                 :key="card.title"

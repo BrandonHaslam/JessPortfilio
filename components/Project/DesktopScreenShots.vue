@@ -1,5 +1,8 @@
 <template>
-    <div :style="backgroundStyles" class="px-4 lg:px-12">
+    <div
+        :style="{ background: backgroundStyles }"
+        class="px-4 lg:px-24 screenshots"
+    >
         <picture>
             <source
                 media="(max-width:799px)"
@@ -14,7 +17,7 @@
                 "
             />
             <img
-                class="w-full h-full object-cover"
+                class="w-full lg:w-4/5 mx-auto object-cover"
                 :src="
                     require(`~/assets/images/projects/${this.directory}/Desktop/${this.screenShots.desktop}`)
                 "
@@ -37,11 +40,17 @@ export default {
             return this.$route.params.project;
         },
         backgroundStyles() {
-            return {
-                background:
-                    "linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%))",
-            };
+            if (this.$route.params.project) {
+                return `linear-gradient(282.06deg, ${this.$store.state.projectStyles.colorDark} 0%, ${this.$store.state.projectStyles.colorDarkest} 100.63%)`;
+            }
+            return "black";
         },
     },
 };
 </script>
+<style scoped>
+.screenshots {
+    margin: 5rem 0;
+    border-radius: 25% 0 25% 0;
+}
+</style>

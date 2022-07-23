@@ -21,7 +21,11 @@
                 <NuxtLink class="button-filled !ml-0" to="/portfolio"
                     >View My Portfolio</NuxtLink
                 >
-                <NuxtLink class="button" to="/about">Download CV</NuxtLink>
+                <a
+                    class="button"
+                    href="'https://drive.google.com/file/d/16-a8kzsYH8DpJ0OwQoRdXxELxbC9KWhN/view?usp=sharing'"
+                    >Download CV</a
+                >
             </div>
         </section>
         <section class="scale-75 sm:scale-100">

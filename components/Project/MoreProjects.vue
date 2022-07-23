@@ -1,8 +1,13 @@
 <template>
-    <!-- <div :style="{ borderColor: styles }" class="border-t">card</div>
-    h3 -->
-    <div>
-        <h3>More Projects</h3>
+    <div class="px-4 lg:px-24">
+        <div
+            :style="{
+                bordercolor: borderStyles,
+            }"
+            class="border-t w-3/4 mx-auto"
+        />
+        <br />
+        <h2 class="text-center text-[4.2rem] font-bold mt-16">More Projects</h2>
         <PortfolioProjectList :projects="currentProjects" />
     </div>
 </template>
@@ -51,7 +56,6 @@ export default {
             },
         ],
     }),
-    // fetch() {},
     async fetch() {
         this.allProjects = await this.$content("projects")
             .only(["title", "directory", "card", "category"])
@@ -60,28 +64,12 @@ export default {
                 error({ statusCode: 404, message: "Page not found" });
             });
     },
-    mounted() {
-        this.getRandomProject();
-    },
-    methods: {
-        getRandomProject() {
-            let remainingProjects = this.allProjects;
-            // let randomProjects = [];
-
-            // let number = Math.floor(Math.random() * remainingProjects.length);
-            // randomProjects.push(remainingProjects[number]);
-            // remainingProjects.splice(number, 1);
-
-            // number = Math.floor(Math.random() * remainingProjects.length);
-            // randomProjects.push(remainingProjects[number]);
-            // remainingProjects.splice(number, 1);
-
-            // number = Math.floor(Math.random() * remainingProjects.length);
-            // randomProjects.push(remainingProjects[number]);
-            // remainingProjects.splice(number, 1);
-
-            // this.currentProjects = randomProjects;
-            // return randomProjects
+    computed: {
+        borderStyles() {
+            if (this.$route.params.project) {
+                return this.$store.state.projectStyles.colorDark;
+            }
+            return "#C275FF";
         },
     },
 };

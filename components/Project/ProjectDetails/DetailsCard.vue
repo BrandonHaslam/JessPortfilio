@@ -7,6 +7,7 @@
             md:my-8
             basis-4/5
             sm:basis-2/5
+            md:mx-4
             lg:basis-[30%]
             relative
             flex flex-col

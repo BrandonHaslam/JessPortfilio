@@ -1,6 +1,6 @@
 <template>
     <main>
-        <ContactSection />
+        <ContactSection :name="contact" />
     </main>
 </template>
 <script>

@@ -4,7 +4,7 @@
         <SoftwareList />
         <KeySkillsSection />
         <ExperienceSection />
-        <ContactSection />
+        <ContactSection :name="'about'" />
     </main>
 </template>
 <script>
