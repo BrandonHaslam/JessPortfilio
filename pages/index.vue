@@ -40,7 +40,7 @@
             >
             <NuxtLink class="button" to="/about/">Read About Me</NuxtLink>
         </div>
-        <form class="hidden" name="Contact" method="POST" data-netlify="true">
+        <!-- <form class="hidden" name="Contact" method="POST" data-netlify="true">
             <h3>Contact Me</h3>
             <p>
                 Fill out the form and I'll get back to you as soon as possible!
@@ -79,7 +79,7 @@
                     Send Message <MailSvg class="h-10 w-10 ml-4 inline" />
                 </button>
             </div>
-        </form>
+        </form> -->
         <!-- <div class="blob" />
         <div class="blob-2" /> -->
         <!-- <div class="blob-3" />
@@ -90,11 +90,11 @@
 <script>
 export default {
     layout: "index",
-    components: {
-        MailSvg: () => import("@/assets/images/Mail.svg"),
-        ContactIconCard: () =>
-            import("~/components/Contact/ContactIconCard.vue"),
-    },
+    // components: {
+    //     MailSvg: () => import("@/assets/images/Mail.svg"),
+    //     ContactIconCard: () =>
+    //         import("~/components/Contact/ContactIconCard.vue"),
+    // },
     data: () => ({
         words: [
             {
