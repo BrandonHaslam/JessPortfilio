@@ -35,10 +35,10 @@
             Designer
         </h1>
         <div class="xs:flex mb-16 text-center xs:justify-center">
-            <NuxtLink class="button-filled" to="/portfolio"
+            <NuxtLink class="button-filled" to="/portfolio/"
                 >View My Portfolio</NuxtLink
             >
-            <NuxtLink class="button" to="/about">Read About Me</NuxtLink>
+            <NuxtLink class="button" to="/about/">Read About Me</NuxtLink>
         </div>
         <form class="hidden" name="Contact" method="POST" data-netlify="true">
             <h3>Contact Me</h3>

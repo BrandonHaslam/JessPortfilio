@@ -17,7 +17,7 @@
             <!-- Internal -->
             <li>
                 <NuxtLink
-                    to="/portfolio"
+                    to="/portfolio/"
                     class="navLink__animation"
                     @click.native="$emit('closeNav')"
                 >
@@ -26,7 +26,7 @@
             </li>
             <li>
                 <NuxtLink
-                    to="/about"
+                    to="/about/"
                     class="navLink__animation"
                     @click.native="$emit('closeNav')"
                     >About</NuxtLink
@@ -44,7 +44,7 @@
                 <NuxtLink
                     :style="colours"
                     class="navLink__animation"
-                    to="/contact"
+                    to="/contact/"
                     @click.native="$emit('closeNav')"
                     >Contact Me</NuxtLink
                 >
