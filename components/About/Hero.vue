@@ -18,7 +18,7 @@
                 visual design.
             </p>
             <div class="xs:flex xs:justify-center lg:justify-start mb-16">
-                <NuxtLink class="button-filled !ml-0" to="/portfolio"
+                <NuxtLink class="button-filled !ml-0" to="/portfolio/"
                     >View My Portfolio</NuxtLink
                 >
                 <a

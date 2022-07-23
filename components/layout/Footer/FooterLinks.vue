@@ -2,17 +2,17 @@
     <ul>
         <!-- Internal -->
         <li>
-            <NuxtLink to="/portfolio"> Portfolio</NuxtLink>
+            <NuxtLink to="/portfolio/"> Portfolio</NuxtLink>
         </li>
         <li>
-            <NuxtLink to="/about">About</NuxtLink>
+            <NuxtLink to="/about/">About</NuxtLink>
         </li>
         <li class="!hidden md:!block">
             <span>|</span>
         </li>
         <!-- External -->
         <li>
-            <NuxtLink to="/contact">Contact</NuxtLink>
+            <NuxtLink to="/contact/">Contact</NuxtLink>
         </li>
         <li class="!hidden md:!block">
             <a href="https://www.linkedin.com/" class="flex items-center h-16">
