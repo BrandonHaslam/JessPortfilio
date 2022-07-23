@@ -1,6 +1,7 @@
 export default {
   // https://www.netlify.com/blog/2020/09/10/the-new-target-static-mode-in-nuxt/
   // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
   mode: 'universal',
   head: {
     title: 'JessicaPortfolio',
