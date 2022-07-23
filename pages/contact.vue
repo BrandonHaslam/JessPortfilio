@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section class="flex mb-32 flex-col md:flex-row-reverse mt-12">
+        <section class="flex mb-32 flex-col md:flex-row-reverse mt-36">
             <section
                 class="
                     h-full
@@ -66,7 +66,7 @@
             >
                 <h3>Contact Me</h3>
                 <p>
-                    Fill out the form and I’ll get back to you as soon as
+                    Fill out the form and I'll get back to you as soon as
                     possible!
                 </p>
                 <label>Full Name*</label>

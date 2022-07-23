@@ -64,13 +64,13 @@
                     mt-12
                     sm:mt-0
                 "
-                name="About"
+                name="Contact"
                 method="POST"
                 data-netlify="true"
             >
                 <h3>Contact Me</h3>
                 <p>
-                    Fill out the form and I’ll get back to you as soon as
+                    Fill out the form and I'll get back to you as soon as
                     possible!
                 </p>
                 <label>Full Name*</label>
