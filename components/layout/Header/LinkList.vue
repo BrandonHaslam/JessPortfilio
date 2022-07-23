@@ -44,7 +44,7 @@
                 <NuxtLink
                     :style="colours"
                     class="navLink__animation"
-                    to="/contact"
+                    to="/contact/"
                     @click.native="$emit('closeNav')"
                     >Contact Me</NuxtLink
                 >

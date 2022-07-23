@@ -64,7 +64,7 @@
                     mt-12
                     sm:mt-0
                 "
-                name="Contact"
+                name="About Contact"
                 method="POST"
                 data-netlify="true"
             >
