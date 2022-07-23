@@ -92,6 +92,8 @@ export default {
     layout: "index",
     components: {
         MailSvg: () => import("@/assets/images/Mail.svg"),
+        ContactIconCard: () =>
+            import("~/components/Contact/ContactIconCard.vue"),
     },
     data: () => ({
         words: [

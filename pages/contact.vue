@@ -112,6 +112,8 @@ export default {
     components: {
         ContactSection: () => import("~/components/Contact/ContactSection.vue"),
         MailSvg: () => import("@/assets/images/Mail.svg"),
+        ContactIconCard: () =>
+            import("~/components/Contact/ContactIconCard.vue"),
     },
 };
 </script>
