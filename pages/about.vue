@@ -119,6 +119,7 @@ export default {
         KeySkillsSection: () => import("~/components/About/KeySkills.vue"),
         ExperienceSection: () => import("~/components/About/Experience.vue"),
         ContactSection: () => import("~/components/Contact/ContactSection.vue"),
+        MailSvg: () => import("@/assets/images/Mail.svg"),
     },
 };
 </script>

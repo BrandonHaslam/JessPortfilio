@@ -90,6 +90,9 @@
 <script>
 export default {
     layout: "index",
+    components: {
+        MailSvg: () => import("@/assets/images/Mail.svg"),
+    },
     data: () => ({
         words: [
             {
