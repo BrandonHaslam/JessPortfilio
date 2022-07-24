@@ -31,7 +31,7 @@
                             branding for projects.
                         </li>
                         <li>
-                            Creating content for social media and ad campagns.
+                            Creating content for social media and ad campaigns.
                         </li>
                         <li>
                             Participate in weekly meeting to discuss project

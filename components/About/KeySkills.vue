@@ -26,7 +26,7 @@ export default {
             {
                 title: "Digital Design",
                 description:
-                    "Bridging the gap between form and function, I use modern techniques and sollutions to bring ideas to life.",
+                    "Bridging the gap between form and function, I use modern techniques and solutions to bring ideas to life.",
                 icon: "DigitalDesign",
             },
             {
@@ -44,7 +44,7 @@ export default {
             {
                 title: "App Design",
                 description:
-                    "By first defiing a clear user journey, encompassing both UI and UX, I create engaging and interactive applications.",
+                    "By first defying a clear user journey, encompassing both UI and UX, I create engaging and interactive applications.",
                 icon: "AppDesign",
             },
         ],
