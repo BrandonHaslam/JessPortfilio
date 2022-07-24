@@ -38,7 +38,7 @@
             <NuxtLink class="button-filled" to="/portfolio/"
                 >View My Portfolio</NuxtLink
             >
-            <NuxtLink class="button" to="/about/">Read About Me</NuxtLink>
+            <NuxtLink class="button" to="/about">Read About Me</NuxtLink>
         </div>
         <!-- <form class="hidden" name="Contact" method="POST" data-netlify="true">
             <h3>Contact Me</h3>

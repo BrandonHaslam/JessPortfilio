@@ -44,6 +44,7 @@ export default {
         MobileScreenShots: () =>
             import("~/components/Project/MobileScreenShots.vue"),
         StyleSheet: () => import("~/components/Project/StyleSheet.vue"),
+        ContactSection: () => import("~/components/Contact/ContactSection.vue"),
         MoreProjects: () => import("~/components/Project/MoreProjects.vue"),
     },
     mounted() {

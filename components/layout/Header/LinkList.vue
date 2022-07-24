@@ -26,7 +26,7 @@
             </li>
             <li>
                 <NuxtLink
-                    to="/about/"
+                    to="/about"
                     class="navLink__animation"
                     @click.native="$emit('closeNav')"
                     >About</NuxtLink
@@ -44,7 +44,7 @@
                 <NuxtLink
                     :style="colours"
                     class="navLink__animation"
-                    to="/contact/"
+                    to="/about#contact"
                     @click.native="$emit('closeNav')"
                     >Contact Me</NuxtLink
                 >
@@ -74,6 +74,13 @@ export default {
             }
             return "color:#c275ff";
         },
+        // contactLink() {
+        //     if (this.$route.path == "/portfolio/" || this.$route.path == "/") {
+        //         return "/about#contact";
+        //     } else {
+        //         return `${this.$route.path}#contact`;
+        //     }
+        // },
     },
 };
 </script>

@@ -57,7 +57,7 @@
                 </div>
                 <div>
                     <h3>
-                        BA Hons Graphic Design Level 3 BTEC Diploma Art & Design
+                        BA Hons Graphic Design <br/> Level 3 BTEC Diploma Art & Design
                     <span
                         >Manchester Metropolitan University (2015 - 2019)</span
                     >

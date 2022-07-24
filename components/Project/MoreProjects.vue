@@ -2,7 +2,7 @@
     <div class="px-4 lg:px-24">
         <div
             :style="{
-                bordercolor: borderStyles,
+                borderColor: borderStyles,
             }"
             class="border-t w-3/4 mx-auto"
         />
