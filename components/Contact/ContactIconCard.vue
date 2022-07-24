@@ -21,6 +21,7 @@ export default {
         PhoneSvg: () => import("@/assets/images/Phone.svg"),
         MailSvg: () => import("@/assets/images/Mail.svg"),
         LinkedInSvg: () => import("@/assets/images/linkedin.svg"),
+        Location: () => import("@/assets/images/LocationIcon.svg"),
     },
     props: {
         icon: {

@@ -24,7 +24,12 @@
                 <a
                     class="button"
                     href="https://drive.google.com/file/d/16-a8kzsYH8DpJ0OwQoRdXxELxbC9KWhN/view?usp=sharing"
-                    >Download CV</a
+                    ><img
+                        :src="require('~/assets/images/About/DownloadCv.png')"
+                        alt="Download cv icon"
+                        class="h-[2ch] mb-[0.5ch] object-contain inline"
+                    />
+                    Download CV</a
                 >
             </div>
         </section>

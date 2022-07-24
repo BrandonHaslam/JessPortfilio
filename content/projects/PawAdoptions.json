@@ -1,0 +1,111 @@
+{
+  "title": "Paw Adoptions",
+
+  "directory": "PawAdoptions",
+
+  "category": "Application",
+
+  "styles": {
+    "colorDarkest": "rgba(63,30,42,1)",
+
+    "colorDark": "rgba(106,54,73,1)",
+
+    "colorLight": "rgb(241,212,120,1)",
+
+    "colorLightest": "rgb(251,226,146,1)",
+
+    "text": "white"
+  },
+
+  "card": {
+    "foreground": "PawImage.png",
+
+    "background": "PawBackground.png"
+  },
+
+  "content": {
+    "hero": {
+      "title": "Paw Adoptions",
+
+      "description": [
+        "Paw Adoptions is a charity wanting to help the millions of animals in shelters find a loving home. Their aim is to have an online platform to assist shelters by advertising their animals to an audience of pet lovers looking to adopt, eager to help make a change and save lives."
+      ],
+
+      "figma": {
+        "desktopLink": "https://www.figma.com/proto/zYPSAGFjUGGI4ZUSNuyiJb/Dog-App?page-id=2%3A8&node-id=16%3A26&viewport=982%2C271%2C0.14&scaling=scale-down&starting-point-node-id=13%3A234&show-proto-sidebar=1",
+
+        "mobileLink": "https://www.figma.com/proto/zYPSAGFjUGGI4ZUSNuyiJb/Dog-App?page-id=2%3A8&node-id=16%3A26&viewport=982%2C271%2C0.14&scaling=scale-down&starting-point-node-id=13%3A234&show-proto-sidebar=1"
+      },
+
+      "background": {
+        "image": {
+          "mobile": "PawHero.jpg",
+
+          "desktop": "PawHero.jpg",
+
+          "alt": "Paw Header Image"
+        },
+
+        "colorOne": "rgba(63, 30, 42, 0.5)",
+
+        "colorTwo": "rgba(63, 30, 42, 1)"
+      }
+    },
+
+    "projectDetails": [
+      {
+        "title": "Market Research",
+
+        "description": "Finding a suitable organisation to adopt a pet from can be challenging. I want to remove this step from the process and link people straight to the animals."
+      },
+
+      {
+        "title": "Wireframes",
+
+        "description": "I mapped out a quick and simple way of connecting people with the right animals by implementing search barriers, starting with a quick survey once signing up. ."
+      },
+
+      {
+        "title": "App Design",
+
+        "description": "With the pets in the spotlight, I designed the app to be welcoming and soft by using warm colours combined with a light and concise layout."
+      }
+    ],
+
+    "solution": {
+      "image": {
+        "mobile": "PawSolutionImage.png",
+
+        "desktop": "PawSolutionImage.png"
+      },
+
+      "alt": "Paw App on mobile",
+
+      "text": [
+        "Most adoption processes are found to be challenging and intense. However, I have created a calm and friendly app for adoptions to be enjoyable, all in the palm of your hand.",
+
+        "Paw Adoptions can now help reduce the amount of unwanted animals with an online platform that is quick and accessible to pet lovers."
+      ]
+    },
+
+    "screenShots": [
+      {
+        "desktop": "PawCentreImage.png",
+
+        "mobile": "PawCentreImage.png"
+      },
+
+      {
+        "desktop": "PawSecondImage.png",
+
+        "mobile": "PawSecondImage.png"
+      }
+    ],
+
+    "components": {
+      "Desktop": "PawProjectDetails.png",
+
+      "Mobile": "PawProjectDetails.png"
+    }
+  }
+}

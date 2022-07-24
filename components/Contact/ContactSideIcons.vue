@@ -8,8 +8,7 @@
                 h-full
                 w-full
                 flex flex-col
-                sm:flex-row
-                flex-wrap
+                sm:flex-row sm:flex-wrap
                 justify-center
                 content-center
                 items-center
@@ -42,7 +41,7 @@
                 ada-label="Jessica Burrow's email address, click to send an email"
             />
             <ContactIconCard
-                icon="PhoneSvg"
+                icon="Location"
                 link=""
                 heading="Location"
                 text="Manchester, England"
