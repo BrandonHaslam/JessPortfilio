@@ -13,13 +13,7 @@
                         <span>OPOP Media (2021 - Present)</span>
                     </h3>
                     <p>
-                        As part of the marketing team, I design websites from
-                        concept to completion, ensuring prototypes and final
-                        designs are high quality for client presentation.
-                        Starting with user flows and wireframes from successful
-                        market research, I work in a team or independently
-                        following brand guidelines to create stylised assets and
-                        content.
+                        As part of the marketing team, I design websites from concept to completion, ensuring prototypes and final designs are high quality for client presentation. Starting with user flows and wireframes from successful market research, I work in a team or independently following brand guidelines to create stylised assets and content. 
                     <ul class="list-disc">
                         Other duties include:
                         <li>
