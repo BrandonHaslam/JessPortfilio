@@ -17,20 +17,19 @@
                     <ul class="list-disc">
                         Other duties include:
                         <li>
-                            Modifying existing websites according to client
-                            requirements.
+                          Developing site content and graphics in partnership with copywriters.
                         </li>
                         <li>
-                            Handling all composition, colour, typography and
-                            branding for projects.
+                          Presenting high quality prototypes and final designs to clients.
                         </li>
                         <li>
-                            Creating content for social media and ad campaigns.
+                           Modifying existing websites according to client requirements. 
                         </li>
                         <li>
-                            Participate in weekly meeting to discuss project
-                            solutions and status.
+                    Handling all composition, colour, typography and branding for projects.
                         </li>
+                        <li>Creating content for social media and campaigns.</li>
+                        <li>Participate in weekly meeting to discuss project solutions and status.</li>
                         <li>Working multiple projects on tight deadlines.</li>
                     </ul>
                     </p>
