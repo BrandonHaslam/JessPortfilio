@@ -1,0 +1,75 @@
+{
+  "title": "The Welcome",
+  "directory": "TheWelcome",
+  "category": "Branding",
+  "styles": {
+    "colorDarkest": "rgba(64,17,26,1)",
+    "colorDark": "rgba(113,31,45,1)",
+    "colorLight": "rgb(252,229,198,1)",
+    "colorLightest": "rgb(255,239,218,1)",
+    "text": "white"
+  },
+  "card": {
+    "foreground": "WelcomeImage.png",
+    "background": "WelcomeBackground.png"
+  },
+  "content": {
+    "hero": {
+      "title": "The Welcome",
+      "description": [
+        "The Welcome is a new and upcoming bar and restaurant located in Prestwich Village. Before launching, the new owner planned to transform the space into a retro diner experience, requiring branding to assist with their vision."
+      ],
+      "figma": {
+        "desktopLink": "",
+        "mobileLink": ""
+      },
+      "background": {
+        "image": {
+          "mobile": "WelcomeHero.jpg",
+          "desktop": "WelcomeHero.jpg",
+          "alt": "Welcome Header Image"
+        },
+        "colorOne": "rgba(64, 17, 26, 0.5)",
+        "colorTwo": "rgba(64, 17, 26, 1)"
+      }
+    },
+    "projectDetails": [
+      {
+        "title": "Logo & Colour Palette",
+        "description": "I chose a colour palette that is bright, nostalgic, and theatrical to welcome the retro experience and guide the bold Art Deco inspired logo."
+      },
+      {
+        "title": "Imagery",
+        "description": "I created illustrative imagery to uphold a cheerful and comfortable atmosphere."
+      },
+      {
+        "title": "Typography",
+        "description": "Placing 2 display fonts together can be risky, however, the heavy weight of the main logo compliments the tall and attractive secondary font."
+      }
+    ],
+    "solution": {
+      "image": {
+        "mobile": "WelcomeSolution.png",
+        "desktop": "WelcomeSolution.png"
+      },
+      "alt": "Welcome on mobile",
+      "text": [
+        "Although inspired by the retro diner experience, I didn’t want to fall under the category of being typical, and so delivered the branding with a modern twist.  My aim was to create a slight high-end ambience, yet hold a cheerful atmosphere to help everyone feel comfortable and welcome."
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "WelcomeCentre.png",
+        "mobile": "WelcomeCentre.png"
+      },
+      {
+        "desktop": "WelcomeSecond.png",
+        "mobile": "WelcomeSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "WelcomeProject.png",
+      "Mobile": "WelcomeProject.png"
+    }
+  }
+}
