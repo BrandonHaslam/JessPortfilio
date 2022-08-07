@@ -1,0 +1,81 @@
+{
+  "title": "Glow Lighting",
+  "directory": "Glow",
+  "category": "Branding",
+  "styles": {
+    "colorDarkest": "rgba(26,23,23,1)",
+    "colorDark": "rgba(38,37,36,1)",
+    "colorLight": "rgb(171,168,211,1)",
+    "colorLightest": "rgb(199,199,225,1)",
+    "text": "white"
+  },
+  "card": {
+    "foreground": "GlowImage.png",
+    "background": "GlowBackground.png"
+  },
+  "content": {
+    "hero": {
+      "title": "Glow Lighting Company",
+      "description": [
+        "Glow Lighting Company is helping to replace traditional lighting with more energy efficient solutions, providing smart LED light bulbs and sustainably made light fixture.",
+        "As a new company, Glow wanted their visual identity to be new, engaging and exciting. This branding would then guide the design of a new online store. "
+      ],
+      "figma": {
+        "desktopLink": "",
+        "mobileLink": ""
+      },
+      "background": {
+        "image": {
+          "mobile": "GlowMain.jpg",
+          "desktop": "GlowHero.jpg",
+          "alt": "Glow Header Image"
+        },
+        "colorOne": "rgba(26, 23, 23, 0.5)",
+        "colorTwo": "rgba(26, 23, 23, 1)"
+      }
+    },
+    "previewImages": {
+      "mobile": "GlowHero.jpg",
+      "desktop": "GlowMain.png"
+    },
+    "projectDetails": [
+      {
+        "title": "Logo",
+        "description": "I designed a bold and minimal logo to represent their modern ethos, that could be transitional throughout their branding."
+      },
+      {
+        "title": "Colour Palette & Imagery",
+        "description": "Inspiration for colour and imagery was taken from abstract but minimal LED lamps, leading on from the concept of providing a way to make traditional light more exciting."
+      },
+      {
+        "title": "Online Store",
+        "description": "I created a clean and attractive website with an added light and dark mode feature to express the function of the product and to keep the customer engaged."
+      }
+    ],
+    "solution": {
+      "image": {
+        "mobile": "GlowSolution.png",
+        "desktop": "GlowSolution.png"
+      },
+      "alt": "Glow on mobile",
+      "text": [
+        "Most adoption processes are found to be challenging and intense. However, I have created a calm and friendly app for adoptions to be enjoyable, all in the palm of your hand.",
+        "Paw Adoptions can now help reduce the amount of unwanted animals with an online platform that is quick and accessible to pet lovers."
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "GlowCentre.png",
+        "mobile": "GlowCentre.png"
+      },
+      {
+        "desktop": "GlowSecond.png",
+        "mobile": "GlowSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "GlowProject.png",
+      "Mobile": "GlowProject.png"
+    }
+  }
+}

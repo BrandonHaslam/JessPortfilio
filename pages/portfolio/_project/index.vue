@@ -8,6 +8,11 @@
             :previewImages="page.content.preview"
             :directory="page.directory"
         />
+        <Preview
+            v-if="page.content.previewImages"
+            :images="page.content.previewImages"
+            :directory="page.directory"
+        />
         <Details :details="page.content.projectDetails" :styles="page.styles" />
         <DesktopScreenShots :screen-shots="page.content.screenShots[0]" />
         <Solution :solution="page.content.solution" />
@@ -38,6 +43,7 @@ export default {
             import("~/components/Project/DevicePreview/DevicePreview.vue"),
         Details: () =>
             import("~/components/Project/ProjectDetails/Details.vue"),
+        Preview: () => import("~/components/Project/Preview.vue"),
         DesktopScreenShots: () =>
             import("~/components/Project/DesktopScreenShots.vue"),
         Solution: () => import("~/components/Project/Solution.vue"),
