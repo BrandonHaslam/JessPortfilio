@@ -11,7 +11,7 @@
   },
   "card": {
     "foreground": "GlowImage.png",
-    "background": "GlowBackground.png"
+    "background": "GlowBackground.jpeg"
   },
   "content": {
     "hero": {
@@ -26,8 +26,8 @@
       },
       "background": {
         "image": {
-          "mobile": "GlowMain.jpg",
-          "desktop": "GlowHero.jpg",
+          "mobile": "GlowMain.jpeg",
+          "desktop": "GlowHero.jpeg",
           "alt": "Glow Header Image"
         },
         "colorOne": "rgba(26, 23, 23, 0.5)",
@@ -35,8 +35,8 @@
       }
     },
     "previewImages": {
-      "mobile": "GlowHero.jpg",
-      "desktop": "GlowMain.png"
+      "mobile": "GlowHero.jpeg",
+      "desktop": "GlowHero.jpeg"
     },
     "projectDetails": [
       {
@@ -59,8 +59,7 @@
       },
       "alt": "Glow on mobile",
       "text": [
-        "Most adoption processes are found to be challenging and intense. However, I have created a calm and friendly app for adoptions to be enjoyable, all in the palm of your hand.",
-        "Paw Adoptions can now help reduce the amount of unwanted animals with an online platform that is quick and accessible to pet lovers."
+        "Overall, Glow's bold branding stands out from other leading retailers, creating a new and engaging experience for customers. They now have the visual identity they deserves, clean, modern and glowing."
       ]
     },
     "screenShots": [
