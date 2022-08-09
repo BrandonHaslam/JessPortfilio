@@ -26,8 +26,8 @@
       },
       "background": {
         "image": {
-          "mobile": "GlowMain.jpeg",
-          "desktop": "GlowHero.jpeg",
+          "mobile": "GlowHero.png",
+          "desktop": "GlowHero.png",
           "alt": "Glow Header Image"
         },
         "colorOne": "rgba(26, 23, 23, 0.5)",
@@ -35,8 +35,8 @@
       }
     },
     "previewImages": {
-      "mobile": "GlowHero.jpeg",
-      "desktop": "GlowHero.jpeg"
+      "mobile": "GlowMain.png",
+      "desktop": "GlowHero.png"
     },
     "projectDetails": [
       {

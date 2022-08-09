@@ -33,6 +33,10 @@
         "colorTwo": "rgba(64, 17, 26, 1)"
       }
     },
+    "previewImages": {
+      "mobile": "WelcomeMain2.png",
+      "desktop": "WelcomeMain.png"
+    },
     "projectDetails": [
       {
         "title": "Logo & Colour Palette",
