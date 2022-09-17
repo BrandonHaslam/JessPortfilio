@@ -1,0 +1,81 @@
+{
+  "title": "Crystal Clear",
+  "directory": "CrystalClear",
+  "category": "Website",
+  "styles": {
+    "colorDarkest": "rgba(0,44,54,1)",
+    "colorDark": "rgba(5,64,78,1)",
+    "colorLight": "rgb(238,181,96,1)",
+    "colorLightest": "rgb(255,209,140,1)",
+    "text": "white"
+  },
+  "card": {
+    "foreground": "CrystalImage.png",
+    "background": "CrystalBackground.png"
+  },
+  "content": {
+    "hero": {
+      "title": "Crystal Clear Travel",
+      "description": [
+        "Crystal Clear is a UK-based travel agency that specialise in arranging tailor made holidays that are truly personalised and unforgettable experiences.",
+        "I was assigned the tasks of redesigning the company branding and creating a new website to make the enquiry and booking service more simple for customers."
+      ],
+      "figma": {
+        "desktopLink": "https://www.figma.com/proto/06r04wNs2SQn0pbia5s2vA/Crystal-Clear-Travel?page-id=206%3A4195&node-id=211%3A4364&viewport=304%2C301%2C0.05&scaling=min-zoom&starting-point-node-id=211%3A4364",
+        "mobileLink": "https://www.figma.com/proto/06r04wNs2SQn0pbia5s2vA/Crystal-Clear-Travel?page-id=217%3A8200&node-id=219%3A4712&viewport=244%2C730%2C0.23&scaling=scale-down&starting-point-node-id=219%3A4712"
+      },
+      "background": {
+        "image": {
+          "mobile": "CrystalHero.png",
+          "desktop": "CrystalHero.png",
+          "alt": "Crystal Clear Header Image"
+        },
+        "colorOne": "rgba(0, 44, 54, 0.5)",
+        "colorTwo": "rgba(0, 44, 54, 1)"
+      }
+    },
+    "preview": {
+      "mobile": "CrystalMobile..png",
+      "desktop": "CrystalDesktop.png"
+    },
+    "projectDetails": [
+      {
+        "title": "Branding",
+        "description": "I created a crystal locator in the shape of a ‘c’, accompanied with a serif typeface with wavy elements to represent ocean waves, yet convey sophistication and uniqueness."
+      },
+      {
+        "title": "Research & User Flow",
+        "description": "I found competitors to have very bulky and information heavy websites with too much choice regarding site navigation. From this, I developed a more simplistic flow for the user."
+      },
+      {
+        "title": "Web Design",
+        "description": "Their previous website was lacking personality and charisma. My redesign is much more bright, enthusiastic and welcoming to potential customers."
+      }
+    ],
+    "solution": {
+      "image": {
+        "mobile": "CrystalSolutions.png",
+        "desktop": "CrystalSolution.png"
+      },
+      "alt": "Crystal Clear on mobile",
+      "text": [
+        "Crystal Clear's new vibrant website emphasises the simplicity of their hassle-free service of creating and planning your tailor-made holiday for you. The entire identity presents an exclusive feeling of a truly personalised experience for the customer, to make aspiring travellers feel welcomed and inspired.",
+        "The new enquiry process gathers all of the customers criteria for their dream vacation from the get-go, so there is less inconvenience during the first introductory consultation, and for the Crystal Clear team to have better time management towards creating the clients bespoke plan, leaving customers feeling impressed."
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "CrystalCentre.png",
+        "mobile": "CrystalCentre.png"
+      },
+      {
+        "desktop": "CrystalSecond.png",
+        "mobile": "CrystalSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "CrystalDetails.png",
+      "Mobile": "CrystalDetails.png"
+    }
+  }
+}

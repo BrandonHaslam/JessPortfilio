@@ -1,63 +1,63 @@
 {
-  "title": "Laterem Group",
+  "title": "LateremGroup",
   "directory": "LateremGroup",
   "category": "Website",
   "styles": {
-    "colorDarkest": "rgba(1,0,35,1)",
-    "colorDark": "rgba(23,22,79,1)",
-    "colorLight": "rgb(112,152,255)",
-    "colorLightest": "rgb(50,124,220)",
+    "colorDarkest": "rgba(11,25,41,1)",
+    "colorDark": "rgba(18,38,62,1)",
+    "colorLight": "rgb(175,198,217,1)",
+    "colorLightest": "rgb(206,224,238,1)",
     "text": "white"
   },
   "card": {
-    "foreground": "LateremImage.png",
-    "background": "LateremBackground.jpg"
+    "foreground": "ForegroundImage.png",
+    "background": "BackgroundImage.png"
   },
   "content": {
     "hero": {
       "title": "Laterem Group",
       "description": [
         "Laterem Group is a London based organisation that provides world-class investment opportunities across the United Kingdom.",
-        "The team were in need of a new brand identity and website to present their past and current projects within their property, investment and development sectors."
+        "The team were in need of a new brand identity and website to present the  current projects they have within their property, investment and development sectors."
       ],
       "figma": {
-        "desktopLink": "https://www.figma.com/proto/pRtYpbEl5f5x02hhPGf7Mg/Laterem-Group?page-id=0%3A1&node-id=2%3A4813&viewport=559%2C407%2C0.03&scaling=min-zoom&starting-point-node-id=2%3A5850",
-        "mobileLink": "https://www.figma.com/proto/pRtYpbEl5f5x02hhPGf7Mg/Laterem-Group?page-id=2%3A2&node-id=2%3A2&viewport=621%2C1062%2C0.19&scaling=scale-down&starting-point-node-id=2%3A95"
+        "desktopLink": "https://www.figma.com/proto/pRtYpbEl5f5x02hhPGf7Mg/Laterem-Group?page-id=0%3A1&node-id=408%3A9208&viewport=514%2C1385%2C0.19&scaling=min-zoom&starting-point-node-id=505%3A10166",
+        "mobileLink": "https://www.figma.com/proto/pRtYpbEl5f5x02hhPGf7Mg/Laterem-Group?page-id=2%3A2&node-id=505%3A9357&viewport=1049%2C-6229%2C1.05&scaling=scale-down&starting-point-node-id=505%3A9357"
       },
       "background": {
         "image": {
-          "mobile": "LateremMobHero.jpg",
-          "desktop": "LateremHeaderImage.jpg",
-          "alt": "Laterem Group Header Image"
+          "mobile": "NewLateremHero.png",
+          "desktop": "NewLateremHero.png",
+          "alt": "Laterem Header Image"
         },
-        "colorOne": "rgba(1, 0, 35, 0.5)",
-        "colorTwo": "rgba(1, 0, 35, 1)"
+        "colorOne": "rgba(11, 25, 41, 0.5)",
+        "colorTwo": "rgba(11, 25, 41, 1)"
       }
     },
     "preview": {
-      "mobile": "LateremMobileImage.jpg",
-      "desktop": "LateremDesktopImage.png"
+      "mobile": "NewLateremMobile.png",
+      "desktop": "NewLateremDesktop.png"
     },
     "projectDetails": [
       {
         "title": "Brand Identity",
-        "description": "To identity between Laterem's core sectors, I created 3 logos and colour schemes. Laterem (Latin) translates to 'brick', which was the foundation to their branding."
+        "description": "To identity between Laterem’s core sectors, I created 3 logos and colour schemes. Laterem (Latin) translates to ‘brick’, which was the foundation to their branding."
       },
       {
         "title": "Wireframes",
-        "description": "I completed user and market research to gain insight on the best solution towards content narration with a good visual flow."
+        "description": "I created low fidelity wireframes by completing user and market research to gain insight on the best solution towards content narration with a good visual flow."
       },
       {
         "title": "Web Design",
-        "description": "To guide the user through the site fluently, I used simple but effective interactions, whilst using bold imagery to convey Laterem's impressive portfolio."
+        "description": "To guide the user through the site fluently, I used simple but effective interactions, whilst using minimalistic techniques to convey Laterem’s impressive portfolio."
       }
     ],
     "solution": {
       "image": {
-        "mobile": "LateremSolution.png",
-        "desktop": "LateremSolutionImage.png"
+        "mobile": "NewLateremSolution.png",
+        "desktop": "NewLateremSolution.png"
       },
-      "alt": "Laterem Group Website on mobile",
+      "alt": "Laterem on mobile",
       "text": [
         "With 3 separate sectors of the company, I created the branding to assist the user to clearly navigate and identify between their property, investment and development industries. Professionalism and reliability are qualities I implemented into each section to reflect the company, qualities potential clients will be looking for in their chosen organisation.",
         "Laterem now has a unique and insightful website to intrigue new and existing clients to enquire about their services."
@@ -65,17 +65,17 @@
     },
     "screenShots": [
       {
-        "desktop": "LateremCentre.png",
-        "mobile": "LateremCentre.png"
+        "desktop": "NewLateremCentre.png",
+        "mobile": "NewLateremCentre.png"
       },
       {
-        "desktop": "LateremSecondImage.png",
-        "mobile": "LateremSecond.png"
+        "desktop": "NewLateremSecond.png",
+        "mobile": "NewLateremSecond.png"
       }
     ],
     "components": {
-      "Desktop": "LateremProject.png",
-      "Mobile": "LateremProjectDetails.png"
+      "Desktop": "NewLateremProject.png",
+      "Mobile": "NewLateremProject.png"
     }
   }
 }
