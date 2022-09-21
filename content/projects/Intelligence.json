@@ -1,0 +1,82 @@
+{
+  "title": "Intelligence Care",
+  "directory": "Intelligence",
+  "category": "Application",
+  "styles": {
+    "colorDarkest": "rgba(19,19,48,1)",
+    "colorDark": "rgba(42,42,84,1)",
+    "colorLight": "rgb(15,170,161,1)",
+    "colorLightest": "rgb(92,209,202,1)",
+    "text": "white"
+  },
+  "card": {
+    "foreground": "CareImage.png",
+    "background": "CareBackground.png"
+  },
+  "content": {
+    "hero": {
+      "title": "Intelligence Care Services",
+      "description": [
+        "Intelligence Care Services are a new business within the care home and supported living industry. They are here to bring together the care workers and employers without the need of a middle man.",
+        "I was assigned the task to bring this business to life. Not only did I have full control over he branding, but creating an online platform for workers to find jobs, maintain their earnings and for employers to manage their staff."
+      ],
+      "background": {
+        "image": {
+          "mobile": "CareHero.png",
+          "desktop": "CareHero.png",
+          "alt": "Intelligence Header Image"
+        },
+        "colorOne": "rgba(19, 19, 48, 0.5)",
+        "colorTwo": "rgba(19, 19, 48, 1)"
+      },
+      "figma": {
+        "desktopLink": "",
+        "mobileLink": ""
+      }
+    },
+    "previewImages": {
+      "mobile": "CareBanner.png",
+      "desktop": "CareBanner.png"
+    },
+    "projectDetails": [
+      {
+        "title": "Branding",
+        "description": "I chose a modern approach of using a minimal vector for their logo to enhance memorability. It contains a medical cross and a heart that combined could be seen as two people hugging."
+      },
+      {
+        "title": "Research & User Flow",
+        "description": "My research contained evaluation into other job search engines, to see what qualities I could implement and improve on, and also finding what information was vital for clients during their employment process."
+      },
+      {
+        "title": "Web App Design",
+        "description": "My main goal was to ensure a fast and easy user experience, to simplify the journey of finding a new position and helping save time."
+      }
+    ],
+    "solution": {
+      "image": {
+        "mobile": "CareSolution.png",
+        "desktop": "CareSolution.png"
+      },
+      "alt": "Intelligence on mobile",
+      "text": [
+        "For the branding I used a cool purple to represent loyalty and turquoise to convey trust, colours that combined stray away from typical care services but still hold the same feeling.",
+        "Throughout my research, I discovered some features that would be beneficial and vital to include within the platform. For instance, a system for workers to undergo thorough compliance checks before they are made available to clients, and also a system for employers to leave feedback for staff based of their time working together which gives their profiles verification.",
+        "Intelligence Care Services now have a one-stop solution for care workers to find new positions and connect with employers, and for employers to search and manage their staff directly."
+      ]
+    },
+    "screenShots": [
+      {
+        "desktop": "CareCentre.png",
+        "mobile": "CareCentre.png"
+      },
+      {
+        "desktop": "CareSecond.png",
+        "mobile": "CareSecond.png"
+      }
+    ],
+    "components": {
+      "Desktop": "CareProject.png",
+      "Mobile": "CareProject.png"
+    }
+  }
+}
